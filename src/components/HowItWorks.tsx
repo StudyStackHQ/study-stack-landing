@@ -1,80 +1,67 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Upload, Users, Video, DollarSign, TrendingUp, Search, HelpCircle, Star, Tv, GraduationCap } from "lucide-react";
+import { DollarSign, TrendingUp, Users, Video, Star, BarChart3, Bot, HelpCircle, Search, Crown, Tv, Lock, Flame, Target, UserPlus, Gamepad2, Upload, GraduationCap } from "lucide-react";
+import AnimatedCounter from "./AnimatedCounter";
 
-const HowItWorks = () => {
-  const creatorSteps = [
+const HowStudyStackWorks = () => {
+  const creatorJourney = [
     {
       step: "1",
-      title: "Upload & Price",
-      description: "Add your study materials and set prices",
+      title: "Document & Upload",
+      description: "Turn your study materials into income streams",
       icon: Upload,
-      color: "text-primary"
+      details: "Add your notes, guides, and materials with pricing"
     },
     {
       step: "2", 
-      title: "Build Following",
-      description: "Share quality content and engage with students",
-      icon: Users,
-      color: "text-accent"
+      title: "AI-Powered Search",
+      description: "Students find your content instantly",
+      icon: Search,
+      details: "Our AI makes your materials discoverable and searchable"
     },
     {
       step: "3",
-      title: "Go Live",
-      description: "Host study sessions and earn tips in real-time",
+      title: "Build Community",
+      description: "Host live study sessions and grow your following",
       icon: Video,
-      color: "text-warning"
+      details: "Stream study sessions, earn tips, engage with students"
     },
     {
       step: "4",
-      title: "Earn Money",
-      description: "Get paid through multiple revenue streams",
+      title: "Multiple Revenue Streams", 
+      description: "Get paid through subscriptions, sales, and tips",
       icon: DollarSign,
-      color: "text-secondary"
-    },
-    {
-      step: "5",
-      title: "Scale Up",
-      description: "Use analytics to optimize and grow your content",
-      icon: TrendingUp,
-      color: "text-primary"
+      details: "One-time sales, monthly subscriptions, live donations"
     }
   ];
 
-  const studentSteps = [
+  const studentJourney = [
     {
       step: "1",
       title: "Search & Discover",
       description: "Find exactly what you need with AI-powered search",
       icon: Search,
-      color: "text-primary"
+      details: "Search inside documents, filter by subject and university"
     },
     {
       step: "2",
       title: "Ask Questions", 
-      description: "Get instant answers from any document",
+      description: "Get instant answers from any document with citations",
       icon: HelpCircle,
-      color: "text-accent"
+      details: "AI reads your materials and answers questions instantly"
     },
     {
       step: "3",
-      title: "Follow Creators",
-      description: "Stay updated with your favorite study influencers",
-      icon: Star,
-      color: "text-warning"
+      title: "Join Study Groups",
+      description: "Connect with top creators and study communities",
+      icon: Users,
+      details: "Follow creators, join live sessions, make study friends"
     },
     {
       step: "4",
-      title: "Join Sessions",
-      description: "Participate in live study streams",
-      icon: Tv,
-      color: "text-secondary"
-    },
-    {
-      step: "5",
       title: "Ace Your Exams",
-      description: "Access the best materials and expert help",
+      description: "Access premium content and expert help",
       icon: GraduationCap,
-      color: "text-primary"
+      details: "Get the best materials and succeed together"
     }
   ];
 
@@ -86,7 +73,7 @@ const HowItWorks = () => {
             How <span className="text-gradient-hero">StudyStack</span> Works
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Whether you're creating content or consuming it, getting started is simple and rewarding.
+            Whether you're creating content or studying, here's how StudyStack transforms your academic journey.
           </p>
         </div>
 
@@ -95,15 +82,15 @@ const HowItWorks = () => {
           <div>
             <div className="text-center mb-8">
               <h3 className="text-2xl md:text-3xl font-bold mb-2 text-gradient-success">
-                For Creators
+                For Content Creators
               </h3>
-              <p className="text-muted-foreground">Turn your expertise into income</p>
+              <p className="text-muted-foreground">"From Study Notes to Side Hustle"</p>
             </div>
             
             <div className="space-y-6">
-              {creatorSteps.map((step, index) => (
+              {creatorJourney.map((step, index) => (
                 <Card key={index} className="hover-lift border border-border/30 shadow-sm bg-white">
-                  <CardContent className="flex items-center gap-4 p-6">
+                  <CardContent className="flex items-start gap-4 p-6">
                     <div className="flex-shrink-0">
                       <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary font-bold text-sm">
                         {step.step}
@@ -114,7 +101,8 @@ const HowItWorks = () => {
                         <step.icon className="w-4 h-4 text-muted-foreground" />
                         <h4 className="font-bold text-lg">{step.title}</h4>
                       </div>
-                      <p className="text-muted-foreground">{step.description}</p>
+                      <p className="text-secondary font-medium mb-1">{step.description}</p>
+                      <p className="text-muted-foreground text-sm">{step.details}</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -128,13 +116,13 @@ const HowItWorks = () => {
               <h3 className="text-2xl md:text-3xl font-bold mb-2 text-gradient-hero">
                 For Students  
               </h3>
-              <p className="text-muted-foreground">Learn smarter, not harder</p>
+              <p className="text-muted-foreground">"AI-Powered Study Success"</p>
             </div>
             
             <div className="space-y-6">
-              {studentSteps.map((step, index) => (
+              {studentJourney.map((step, index) => (
                 <Card key={index} className="hover-lift border border-border/30 shadow-sm bg-white">
-                  <CardContent className="flex items-center gap-4 p-6">
+                  <CardContent className="flex items-start gap-4 p-6">
                     <div className="flex-shrink-0">
                       <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">
                         {step.step}
@@ -145,11 +133,46 @@ const HowItWorks = () => {
                         <step.icon className="w-4 h-4 text-muted-foreground" />
                         <h4 className="font-bold text-lg">{step.title}</h4>
                       </div>
-                      <p className="text-muted-foreground">{step.description}</p>
+                      <p className="text-primary font-medium mb-1">{step.description}</p>
+                      <p className="text-muted-foreground text-sm">{step.details}</p>
                     </div>
                   </CardContent>
                 </Card>
               ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Substack tagline */}
+        <div className="text-center mt-16">
+          <div className="bg-white rounded-2xl p-8 max-w-4xl mx-auto border border-gray-100 hover:border-gray-200 transition-all duration-300">
+            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-gradient-creative">
+              "Substack for Students"
+            </h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-muted-foreground">
+              <div className="flex items-center justify-center gap-2 hover:scale-105 transition-transform cursor-pointer">
+                <Search className="w-5 h-5 text-muted-foreground" />
+                <span className="font-medium">AI-powered search</span>
+              </div>
+              <div className="flex items-center justify-center gap-2 hover:scale-105 transition-transform cursor-pointer">
+                <Users className="w-5 h-5 text-muted-foreground" />
+                <span className="font-medium">Study communities</span>
+              </div>
+              <div className="flex items-center justify-center gap-2 hover:scale-105 transition-transform cursor-pointer">
+                <Video className="w-5 h-5 text-muted-foreground" />
+                <span className="font-medium">Live study sessions</span>
+              </div>
+              <div className="flex items-center justify-center gap-2 hover:scale-105 transition-transform cursor-pointer">
+                <DollarSign className="w-5 h-5 text-muted-foreground" />
+                <span className="font-medium">Creator monetization</span>
+              </div>
+            </div>
+            
+            {/* Added earnings preview */}
+            <div className="mt-8 flex justify-center items-center gap-2 text-sm text-secondary font-semibold">
+              <DollarSign className="w-4 h-4" />
+              <span>Top creators earning </span>
+              <AnimatedCounter end={2000} prefix="$" suffix="/month" />
             </div>
           </div>
         </div>
@@ -158,4 +181,4 @@ const HowItWorks = () => {
   );
 };
 
-export default HowItWorks;
+export default HowStudyStackWorks;

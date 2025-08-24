@@ -1,8 +1,7 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
-import ValuePropositions from "@/components/ValuePropositions";
+import HowStudyStackWorks from "@/components/HowItWorks";
 import FeatureHighlights from "@/components/FeatureHighlights";
-import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import TrustSecurity from "@/components/TrustSecurity";
@@ -14,9 +13,8 @@ const Index = () => {
     <main className="min-h-screen">
       <Navigation />
       <HeroSection />
-      <ValuePropositions />
+      <HowStudyStackWorks />
       <FeatureHighlights />
-      <HowItWorks />
       <Testimonials />
       <FAQ />
       <TrustSecurity />
