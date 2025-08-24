@@ -42,9 +42,7 @@ const HeroSection = () => {
         
         {/* Hero description */}
         <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-4xl mx-auto leading-relaxed">
-          Document your study sessions, search through your own notes instantly with AI, and host group study sessions online. 
-          Create valuable study content, sell it to fellow students, make new friends, and get those A's together. 
-          StudyStack is where studying meets community and income.
+          Document your study sessions, search your notes with AI, host group study sessions online, and sell your best content. Make friends and get A's together.
         </p>
         
         {/* CTA buttons */}
