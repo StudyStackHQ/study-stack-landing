@@ -66,7 +66,11 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Supporting colors for elementary-friendly design
+				'info-bg': 'hsl(var(--info-bg))',
+				'success-bg': 'hsl(var(--success-bg))',
+				'warning-bg': 'hsl(var(--warning-bg))'
 			},
 			fontFamily: {
 				sans: ['Nunito', 'Inter', 'system-ui', 'sans-serif'],

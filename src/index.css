@@ -2,60 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-/* StudyStack Design System - Academic meets Creator Economy */
+/* StudyStack Design System - Elementary-Friendly Color Palette */
 
 @layer base {
   :root {
-    /* Core Brand Colors - High Contrast Elementary-Friendly */
-    --background: 0 0% 100%;
-    --foreground: 215 25% 8%;
+    /* Elementary-Friendly Color Palette */
+    --background: 0 0% 99%;
+    --foreground: 210 10% 23%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 215 25% 8%;
+    --card: 0 0% 99%;
+    --card-foreground: 210 10% 23%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 8%;
+    --popover: 0 0% 99%;
+    --popover-foreground: 210 10% 23%;
 
-    /* Primary - Rich Blue (high contrast but friendly) */
-    --primary: 213 94% 50%;
+    /* Primary - Soft Trustworthy Blue (#4A90E2) */
+    --primary: 213 72% 59%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 213 94% 60%;
+    --primary-light: 213 72% 69%;
 
-    /* Secondary - Forest Green (high contrast for money/success) */
-    --secondary: 142 80% 35%;
+    /* Secondary - Success/Growth Green (#7ED321) */
+    --secondary: 84 85% 51%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Accent - Golden Yellow (high contrast, achievement) */
-    --accent: 43 96% 45%;
-    --accent-foreground: 0 0% 10%;
+    /* Accent - Creative Purple for AI (#9013FE) */
+    --accent: 266 99% 54%;
+    --accent-foreground: 0 0% 100%;
     
-    /* Muted tones - higher contrast */
-    --muted: 210 40% 94%;
-    --muted-foreground: 215 20% 35%;
+    /* Child-Friendly Neutrals */
+    --muted: 210 17% 98%;
+    --muted-foreground: 210 11% 46%;
 
-    /* Warning/Energy - Vibrant Orange */
-    --warning: 24 95% 53%;
+    /* Supporting Colors */
+    --warning: 35 100% 50%;
     --warning-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 85%;
-    --input: 214 32% 88%;
-    --ring: 213 94% 50%;
+    --border: 210 17% 92%;
+    --input: 210 17% 95%;
+    --ring: 213 72% 59%;
 
     --radius: 0.5rem;
 
-    /* Gradients for StudyStack branding - softer tones */
+    /* Custom Supporting Colors */
+    --info-bg: 207 85% 94%;
+    --success-bg: 120 39% 93%;
+    --warning-bg: 54 100% 88%;
+
+    /* Gradients with new palette */
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
-    --gradient-success: linear-gradient(135deg, hsl(var(--secondary)), hsl(142 69% 68%));
-    --gradient-creative: linear-gradient(135deg, hsl(var(--accent)), hsl(45 96% 66%));
-    --gradient-energy: linear-gradient(135deg, hsl(var(--warning)), hsl(33 100% 70%));
+    --gradient-success: linear-gradient(135deg, hsl(var(--secondary)), hsl(84 85% 61%));
+    --gradient-creative: linear-gradient(135deg, hsl(var(--accent)), hsl(266 99% 64%));
+    --gradient-energy: linear-gradient(135deg, hsl(var(--warning)), hsl(35 100% 60%));
     
-    /* Shadows for depth - gentler for young eyes */
-    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.2);
-    --shadow-card: 0 4px 20px -4px hsl(var(--primary) / 0.1);
-    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.15);
+    /* Gentle shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.15);
+    --shadow-card: 0 4px 20px -4px hsl(var(--primary) / 0.08);
+    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.12);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -73,47 +78,32 @@
     --glass-backdrop: backdrop-filter: blur(10px);
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
-
     --card: 222.2 84% 4.9%;
     --card-foreground: 210 40% 98%;
-
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
-
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
-
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
-
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
-
     --accent: 217.2 32.6% 17.5%;
     --accent-foreground: 210 40% 98%;
-
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
@@ -201,7 +191,24 @@
   }
   
   .text-gradient-success {
-    @apply bg-gradient-to-r from-secondary to-green-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-secondary via-secondary to-green-400 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-creative {
+    @apply bg-gradient-to-r from-accent to-purple-500 bg-clip-text text-transparent;
+  }
+
+  /* Supporting color utilities */
+  .bg-info {
+    background-color: hsl(var(--info-bg));
+  }
+  
+  .bg-success-light {
+    background-color: hsl(var(--success-bg));
+  }
+  
+  .bg-warning-light {
+    background-color: hsl(var(--warning-bg));
   }
 
   /* Advanced effects */
