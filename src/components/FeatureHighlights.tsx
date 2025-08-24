@@ -49,8 +49,8 @@ const FeatureHighlights = () => {
           {features.map((feature, index) => (
             <Card key={index} className="hover-lift border border-border/30 shadow-sm overflow-hidden group bg-white">
               <CardHeader className="pb-4">
-                <div className="w-12 h-12 mb-4 bg-gray-100 rounded-lg flex items-center justify-center group-hover:scale-110 transition-smooth">
-                  <feature.icon className="w-6 h-6 text-muted-foreground" />
+                <div className="w-12 h-12 mb-4 bg-section rounded-lg flex items-center justify-center group-hover:scale-110 transition-smooth">
+                  <feature.icon className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <CardTitle className="text-2xl font-bold">
                   {feature.title}

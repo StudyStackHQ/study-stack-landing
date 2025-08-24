@@ -105,7 +105,7 @@ const IncomeSimulator = () => {
               </div>
 
               {/* Results */}
-              <div className="bg-gray-50 rounded-xl p-6 text-center">
+              <div className="bg-section rounded-xl p-6 text-center">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <div className="text-3xl md:text-4xl font-bold text-secondary mb-2">

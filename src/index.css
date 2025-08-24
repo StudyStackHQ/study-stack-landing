@@ -21,6 +21,7 @@
     --primary-foreground: 0 0% 100%;  /* White text on primary */
     --primary-button: 158 99% 15%;    /* #014D36 - Button green */
     --primary-accent: 150 42% 30%;    /* #2D6A4F - Accent green */
+    --section-bg: 158 100% 15%;       /* #004D3A - Dark green for section backgrounds */
     
     /* Hero mint green background */
     --hero-bg: 140 45% 85%;           /* #CFE8D6 - Soft mint background */
@@ -192,8 +193,10 @@
     background-color: hsl(var(--success-bg));
   }
   
-  .bg-warning-light {
-    background-color: hsl(var(--warning-bg));
+  /* Section background utility */
+  .bg-section {
+    background-color: hsl(var(--section-bg));
+    color: hsl(var(--primary-foreground));
   }
 
   /* Advanced effects */

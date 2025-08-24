@@ -66,7 +66,7 @@ const HowStudyStackWorks = () => {
   ];
 
   return (
-    <section id="how-it-works" className="py-12 bg-gray-50 border-t border-border/30">
+    <section id="how-it-works" className="py-12 bg-section border-t border-primary/20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
