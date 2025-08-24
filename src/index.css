@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    /* Core Brand Colors - Academic Blues & Purples */
+    /* Core Brand Colors - Elementary-Friendly Palette */
     --background: 0 0% 100%;
     --foreground: 215 25% 15%;
 
@@ -16,25 +16,25 @@
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 15%;
 
-    /* Primary - Deep Academic Blue */
-    --primary: 214 84% 56%;
+    /* Primary - Soft Sky Blue (calm, trustworthy) */
+    --primary: 213 93% 68%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 214 84% 70%;
+    --primary-light: 213 93% 78%;
 
-    /* Secondary - Success Green for earning/money */
-    --secondary: 142 71% 45%;
+    /* Secondary - Gentle Green (growth, positive) */
+    --secondary: 142 69% 58%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Accent - Creative Purple */
-    --accent: 259 94% 51%;
-    --accent-foreground: 0 0% 100%;
+    /* Accent - Warm Sunny Yellow (cheerful, achievement) */
+    --accent: 45 96% 56%;
+    --accent-foreground: 0 0% 15%;
     
-    /* Muted tones */
+    /* Muted tones - softer for young eyes */
     --muted: 210 40% 96%;
     --muted-foreground: 215 16% 47%;
 
-    /* Warning/Energy - Orange for live streaming */
-    --warning: 35 91% 62%;
+    /* Warning/Energy - Soft Orange for live streaming */
+    --warning: 33 100% 60%;
     --warning-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -42,20 +42,20 @@
 
     --border: 214 32% 91%;
     --input: 214 32% 91%;
-    --ring: 214 84% 56%;
+    --ring: 213 93% 68%;
 
     --radius: 0.5rem;
 
-    /* Gradients for StudyStack branding */
+    /* Gradients for StudyStack branding - softer tones */
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
-    --gradient-success: linear-gradient(135deg, hsl(var(--secondary)), hsl(142 71% 55%));
-    --gradient-creative: linear-gradient(135deg, hsl(var(--accent)), hsl(280 94% 61%));
-    --gradient-energy: linear-gradient(135deg, hsl(var(--warning)), hsl(35 91% 72%));
+    --gradient-success: linear-gradient(135deg, hsl(var(--secondary)), hsl(142 69% 68%));
+    --gradient-creative: linear-gradient(135deg, hsl(var(--accent)), hsl(45 96% 66%));
+    --gradient-energy: linear-gradient(135deg, hsl(var(--warning)), hsl(33 100% 70%));
     
-    /* Shadows for depth */
-    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.3);
-    --shadow-card: 0 4px 20px -4px hsl(var(--primary) / 0.15);
-    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.2);
+    /* Shadows for depth - gentler for young eyes */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.2);
+    --shadow-card: 0 4px 20px -4px hsl(var(--primary) / 0.1);
+    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.15);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
