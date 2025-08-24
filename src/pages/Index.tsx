@@ -1,13 +1,24 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/HeroSection";
+import ValuePropositions from "@/components/ValuePropositions";
+import FeatureHighlights from "@/components/FeatureHighlights";
+import HowItWorks from "@/components/HowItWorks";
+import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
+import TrustSecurity from "@/components/TrustSecurity";
+import FinalCTA from "@/components/FinalCTA";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen">
+      <HeroSection />
+      <ValuePropositions />
+      <FeatureHighlights />
+      <HowItWorks />
+      <Testimonials />
+      <FAQ />
+      <TrustSecurity />
+      <FinalCTA />
+    </main>
   );
 };
 
