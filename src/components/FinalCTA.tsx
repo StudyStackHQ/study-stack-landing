@@ -69,7 +69,7 @@ const FinalCTA = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground px-10 py-4 text-xl font-semibold hover-glow transition-smooth"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground px-10 py-4 text-xl font-semibold hover:scale-105 transition-smooth"
             >
               Join Waitlist - Get Early Access
             </Button>

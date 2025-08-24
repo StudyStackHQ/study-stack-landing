@@ -166,14 +166,6 @@
     @apply -translate-y-1 shadow-elegant;
   }
 
-  .hover-glow {
-    @apply transition-smooth;
-  }
-  
-  .hover-glow:hover {
-    @apply shadow-glow scale-105;
-  }
-
   /* Minimal text effects */
   .text-gradient-hero {
     @apply bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent;
