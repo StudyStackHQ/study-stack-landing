@@ -6,7 +6,6 @@ import IncomeSimulator from "@/components/IncomeSimulator";
 import Testimonials from "@/components/Testimonials";
 import FAQ from "@/components/FAQ";
 import TrustSecurity from "@/components/TrustSecurity";
-import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -20,7 +19,6 @@ const Index = () => {
       <Testimonials />
       <FAQ />
       <TrustSecurity />
-      <FinalCTA />
       <Footer />
     </main>
   );
