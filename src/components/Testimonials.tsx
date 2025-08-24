@@ -1,6 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader } from "@/components/ui/card";
-import { Stethoscope, Wrench, Briefcase, Calculator, Building2, Rocket, FlaskConical, Zap, GraduationCap, Star, Target, Heart } from "lucide-react";
-import AnimatedCounter from "./AnimatedCounter";
+import { Stethoscope, Wrench, Briefcase, Calculator, Building2, Star, Heart } from "lucide-react";
 
 const Testimonials = () => {
   const testimonials = [
@@ -48,13 +47,6 @@ const Testimonials = () => {
     }
   ];
 
-  const stats = [
-    { label: "Students on waitlist", value: "500+", icon: Rocket },
-    { label: "Beta testers providing feedback", value: "50+", icon: FlaskConical },
-    { label: "Target AI response time", value: "<2 seconds", icon: Zap },
-    { label: "Universities represented in beta", value: "10+", icon: GraduationCap }
-  ];
-
   return (
     <section id="testimonials" className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -95,33 +87,6 @@ const Testimonials = () => {
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* Platform Stats */}
-        <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
-          <h3 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gradient-hero">
-            Platform Stats
-          </h3>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <stat.icon className="w-6 h-6 mx-auto mb-2 text-muted-foreground" />
-                <div className="text-2xl md:text-3xl font-bold text-primary mb-1">
-                  {stat.value}
-                </div>
-                <div className="text-sm text-muted-foreground">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </div>
-          
-          <div className="text-center mt-8">
-            <div className="inline-flex items-center gap-2 bg-secondary/10 text-secondary px-4 py-2 rounded-full font-semibold">
-              <Target className="w-4 h-4" />
-              <span>Launching Fall 2025</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
