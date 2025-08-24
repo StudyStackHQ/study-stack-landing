@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Rocket } from "lucide-react";
-import studyStackLogo from "@/assets/studystack-logo.svg";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -14,7 +13,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="mb-4">
-              <img src={studyStackLogo} alt="StudyStack - Knowledge • Community • Income" className="h-96" />
+              <h2 className="font-yearbook text-4xl font-bold text-primary">StudyStack</h2>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md leading-relaxed">
               The social learning platform where students turn knowledge into income. 

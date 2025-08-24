@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import studyStackLogo from "@/assets/studystack-logo.svg";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,7 +27,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <img src={studyStackLogo} alt="StudyStack - Knowledge • Community • Income" className="h-12" />
+            <h1 className="font-yearbook text-2xl font-bold text-primary">StudyStack</h1>
           </div>
 
           {/* Navigation Links */}

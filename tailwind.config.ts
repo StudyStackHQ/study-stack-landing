@@ -77,6 +77,7 @@ export default {
 				sans: ['Inter', 'system-ui', 'sans-serif'],
 				serif: ['Georgia', 'Times New Roman', 'serif'],
 				heading: ['Georgia', 'Times New Roman', 'serif'],
+				yearbook: ['Bungee', 'system-ui', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
