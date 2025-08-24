@@ -34,8 +34,8 @@
     --secondary: 142 71% 32%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Accent - Minimal purple, used sparingly */
-    --accent: 266 85% 35%;
+    /* Accent - Derived from cream base color #FEFFF2 */
+    --accent: 72 45% 35%;             /* Warm olive-green derived from cream */
     --accent-foreground: 0 0% 100%;
     
     /* High-contrast neutrals */
