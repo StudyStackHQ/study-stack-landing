@@ -4,9 +4,9 @@ import heroImage from "@/assets/hero-image.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-hero">
       {/* Subtle mesh background */}
-      <div className="absolute inset-0 gradient-mesh" />
+      <div className="absolute inset-0 bg-hero" />
       
       {/* Minimal floating elements */}
       <div className="absolute inset-0 overflow-hidden">
