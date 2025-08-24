@@ -99,7 +99,7 @@ const ValuePropositions = () => {
         <div className="text-center mt-16">
           <div className="bg-gray-50 rounded-2xl p-8 max-w-4xl mx-auto border border-gray-100 hover:border-gray-200 transition-all duration-300">
             <h3 className="text-2xl md:text-3xl font-bold mb-6 text-gradient-creative">
-              "The Netflix of Study Materials"
+              "Substack for Students"
             </h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-muted-foreground">
               <div className="flex items-center justify-center gap-2 hover:scale-105 transition-transform cursor-pointer">
