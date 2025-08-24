@@ -11,8 +11,8 @@ const HeroSection = () => {
       
       {/* Minimal floating elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 w-16 h-16 bg-muted rounded-full opacity-40 floating-animation" style={{ animationDelay: '0s' }} />
-        <div className="absolute bottom-40 right-20 w-12 h-12 bg-muted rounded-lg opacity-30 floating-animation" style={{ animationDelay: '3s' }} />
+        <div className="absolute top-20 left-10 w-16 h-16 bg-muted rounded-full opacity-40" style={{ animationDelay: '0s' }} />
+        <div className="absolute bottom-40 right-20 w-12 h-12 bg-muted rounded-lg opacity-30" style={{ animationDelay: '3s' }} />
       </div>
       
       <div className="relative z-10 container mx-auto px-4 text-center max-w-6xl">
