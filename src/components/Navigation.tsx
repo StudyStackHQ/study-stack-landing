@@ -19,16 +19,16 @@ const Navigation = () => {
   };
 
   return (
-    <nav className={`fixed w-full top-8 z-50 transition-all duration-300 ${
+    <nav className={`fixed w-full top-0 z-50 transition-all duration-300 ${
       isScrolled 
         ? 'bg-background/80 backdrop-blur-lg border-b border-border/50 shadow-lg' 
         : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-80 py-4">
+        <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <img src={studyStackLogo} alt="StudyStack - Knowledge • Community • Income" className="h-80" />
+            <img src={studyStackLogo} alt="StudyStack - Knowledge • Community • Income" className="h-12" />
           </div>
 
           {/* Navigation Links */}
