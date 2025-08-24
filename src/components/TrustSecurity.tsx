@@ -1,21 +1,22 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { GraduationCap, Lock, Shield, CheckCircle, KeyRound, FileText, Handshake } from "lucide-react";
 
 const TrustSecurity = () => {
   const trustFeatures = [
     {
-      icon: "🎓",
+      icon: GraduationCap,
       title: "Academic Integrity",
       description: "Plagiarism detection on all uploads, user verification system, community reporting and moderation, respect for copyright and fair use.",
       color: "border-accent/20"
     },
     {
-      icon: "🔒",
+      icon: Lock,
       title: "Payment Security", 
       description: "Stripe-powered secure payments, PCI compliance guaranteed, encrypted data transmission, fraud protection included.",
       color: "border-secondary/20"
     },
     {
-      icon: "🛡️",
+      icon: Shield,
       title: "Privacy Protection",
       description: "GDPR and CCPA compliant, no selling of student data, granular privacy controls, optional anonymous browsing.",
       color: "border-primary/20"
@@ -38,7 +39,7 @@ const TrustSecurity = () => {
           {trustFeatures.map((feature, index) => (
             <Card key={index} className={`hover-lift shadow-card border-2 ${feature.color} text-center h-full`}>
               <CardHeader className="pb-4">
-                <div className="text-5xl mb-4">{feature.icon}</div>
+                <feature.icon className="w-16 h-16 mx-auto mb-4 text-accent" />
                 <CardTitle className="text-xl font-bold">{feature.title}</CardTitle>
               </CardHeader>
               <CardContent>
@@ -56,22 +57,22 @@ const TrustSecurity = () => {
             <h3 className="text-2xl font-bold mb-6 text-gradient-creative">Why Students Trust StudyStack</h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
               <div>
-                <div className="text-3xl mb-2">✅</div>
+                <CheckCircle className="w-8 h-8 mx-auto mb-2 text-primary" />
                 <div className="font-semibold text-primary">Student-First</div>
                 <div className="text-sm text-muted-foreground">Built by students, for students</div>
               </div>
               <div>
-                <div className="text-3xl mb-2">🔐</div>
+                <KeyRound className="w-8 h-8 mx-auto mb-2 text-secondary" />
                 <div className="font-semibold text-secondary">Secure by Design</div>
                 <div className="text-sm text-muted-foreground">Enterprise-grade security</div>
               </div>
               <div>
-                <div className="text-3xl mb-2">📋</div>
+                <FileText className="w-8 h-8 mx-auto mb-2 text-accent" />
                 <div className="font-semibold text-accent">Fully Compliant</div>
                 <div className="text-sm text-muted-foreground">GDPR, CCPA, and more</div>
               </div>
               <div>
-                <div className="text-3xl mb-2">🤝</div>
+                <Handshake className="w-8 h-8 mx-auto mb-2 text-warning" />
                 <div className="font-semibold text-warning">Fair & Transparent</div>
                 <div className="text-sm text-muted-foreground">No hidden fees or surprises</div>
               </div>

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Music, Rocket, Zap, GraduationCap } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
 
 const HeroSection = () => {
@@ -25,13 +26,13 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-radial from-transparent via-background/5 to-background/20" />
       
       <div className="relative z-10 container mx-auto px-4 text-center max-w-6xl">
-        {/* Main headline with musical note emojis */}
+        {/* Main headline with musical note icons */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-          <span className="text-4xl md:text-5xl">🎵</span>{" "}
+          <Music className="inline w-12 h-12 md:w-16 md:h-16 text-accent mr-2" />
           <span className="text-gradient-hero">
             My StudyStack Brings All the A's to The Yard
-          </span>{" "}
-          <span className="text-4xl md:text-5xl">🎵</span>
+          </span>
+          <Music className="inline w-12 h-12 md:w-16 md:h-16 text-accent ml-2" />
         </h1>
         
         {/* Subheadline */}
@@ -66,15 +67,15 @@ const HeroSection = () => {
         {/* Trust indicators with enhanced styling */}
         <div className="flex flex-col sm:flex-row gap-8 justify-center items-center text-sm">
           <div className="flex items-center gap-2 bg-secondary/10 px-4 py-2 rounded-full glass-card hover:scale-105 transition-bounce">
-            <span className="text-secondary text-lg animate-pulse">🚀</span>
+            <Rocket className="w-5 h-5 text-secondary animate-pulse" />
             <span className="font-semibold">500+ Students on waitlist</span>
           </div>
           <div className="flex items-center gap-2 bg-warning/10 px-4 py-2 rounded-full glass-card hover:scale-105 transition-bounce">
-            <span className="text-warning text-lg">⚡</span>
+            <Zap className="w-5 h-5 text-warning" />
             <span className="font-semibold">&lt;2 seconds AI response time</span>
           </div>
           <div className="flex items-center gap-2 bg-accent/10 px-4 py-2 rounded-full glass-card hover:scale-105 transition-bounce">
-            <span className="text-accent text-lg">🎓</span>
+            <GraduationCap className="w-5 h-5 text-accent" />
             <span className="font-semibold">10+ Universities in beta</span>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Upload, Users, Video, DollarSign, TrendingUp, Search, HelpCircle, Star, Tv, GraduationCap } from "lucide-react";
 
 const HowItWorks = () => {
   const creatorSteps = [
@@ -6,35 +7,35 @@ const HowItWorks = () => {
       step: "1",
       title: "Upload & Price",
       description: "Add your study materials and set prices",
-      icon: "📤",
+      icon: Upload,
       color: "text-primary"
     },
     {
       step: "2", 
       title: "Build Following",
       description: "Share quality content and engage with students",
-      icon: "👥",
+      icon: Users,
       color: "text-accent"
     },
     {
       step: "3",
       title: "Go Live",
       description: "Host study sessions and earn tips in real-time",
-      icon: "🎥",
+      icon: Video,
       color: "text-warning"
     },
     {
       step: "4",
       title: "Earn Money",
       description: "Get paid through multiple revenue streams",
-      icon: "💰",
+      icon: DollarSign,
       color: "text-secondary"
     },
     {
       step: "5",
       title: "Scale Up",
       description: "Use analytics to optimize and grow your content",
-      icon: "📈",
+      icon: TrendingUp,
       color: "text-primary"
     }
   ];
@@ -44,35 +45,35 @@ const HowItWorks = () => {
       step: "1",
       title: "Search & Discover",
       description: "Find exactly what you need with AI-powered search",
-      icon: "🔍",
+      icon: Search,
       color: "text-primary"
     },
     {
       step: "2",
       title: "Ask Questions", 
       description: "Get instant answers from any document",
-      icon: "❓",
+      icon: HelpCircle,
       color: "text-accent"
     },
     {
       step: "3",
       title: "Follow Creators",
       description: "Stay updated with your favorite study influencers",
-      icon: "⭐",
+      icon: Star,
       color: "text-warning"
     },
     {
       step: "4",
       title: "Join Sessions",
       description: "Participate in live study streams",
-      icon: "📺",
+      icon: Tv,
       color: "text-secondary"
     },
     {
       step: "5",
       title: "Ace Your Exams",
       description: "Access the best materials and expert help",
-      icon: "🎓",
+      icon: GraduationCap,
       color: "text-primary"
     }
   ];
@@ -110,7 +111,7 @@ const HowItWorks = () => {
                     </div>
                     <div className="flex-grow">
                       <div className="flex items-center gap-2 mb-1">
-                        <span className="text-2xl">{step.icon}</span>
+                        <step.icon className="w-5 h-5 text-secondary" />
                         <h4 className="font-bold text-lg">{step.title}</h4>
                       </div>
                       <p className="text-muted-foreground">{step.description}</p>
@@ -141,7 +142,7 @@ const HowItWorks = () => {
                     </div>
                     <div className="flex-grow">
                       <div className="flex items-center gap-2 mb-1">
-                        <span className="text-2xl">{step.icon}</span>
+                        <step.icon className="w-5 h-5 text-primary" />
                         <h4 className="font-bold text-lg">{step.title}</h4>
                       </div>
                       <p className="text-muted-foreground">{step.description}</p>

@@ -1,30 +1,31 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Rocket, DollarSign, Phone, Gift, TrendingUp, Bot, BarChart3, Search, MessageCircle } from "lucide-react";
 
 const FinalCTA = () => {
   const benefits = [
     {
-      icon: "🚀",
+      icon: Rocket,
       title: "First to Experience",
       description: "Get access to StudyStack before the general public and help shape the platform."
     },
     {
-      icon: "💰",
+      icon: DollarSign,
       title: "Founder's Pricing",
       description: "Lock in discounted rates for life as one of our founding members."
     },
     {
-      icon: "📞",
+      icon: Phone,
       title: "Direct Access",
       description: "Join exclusive Q&A sessions with the founding team and influence product development."
     },
     {
-      icon: "🎁",
+      icon: Gift,
       title: "Bonus Features",
       description: "Early members get additional storage, priority AI processing, and exclusive creator tools."
     },
     {
-      icon: "📈",
+      icon: TrendingUp,
       title: "Head Start",
       description: "Build your following and upload content before the competition arrives."
     }
@@ -32,22 +33,22 @@ const FinalCTA = () => {
 
   const demoHighlights = [
     {
-      icon: "🤖",
+      icon: Bot,
       title: "See AI in Action",
       description: "Watch as our AI answers complex questions from real study materials with precise citations."
     },
     {
-      icon: "📊",
+      icon: BarChart3,
       title: "Creator Dashboard Preview",
       description: "Explore the analytics and monetization tools that will help you succeed."
     },
     {
-      icon: "🔍",
+      icon: Search,
       title: "Search Demonstration",
       description: "Experience the power of searching inside document content, not just titles."
     },
     {
-      icon: "💬",
+      icon: MessageCircle,
       title: "Live Q&A",
       description: "Ask our team anything about features, pricing, timeline, or technical details."
     }
@@ -93,7 +94,7 @@ const FinalCTA = () => {
               {benefits.map((benefit, index) => (
                 <Card key={index} className="hover-lift shadow-card border-l-4 border-l-secondary">
                   <CardContent className="flex items-start gap-4 p-4">
-                    <span className="text-2xl flex-shrink-0">{benefit.icon}</span>
+                    <benefit.icon className="w-6 h-6 flex-shrink-0 text-secondary mt-1" />
                     <div>
                       <h4 className="font-bold text-lg mb-1">{benefit.title}</h4>
                       <p className="text-muted-foreground text-sm">{benefit.description}</p>
@@ -113,7 +114,7 @@ const FinalCTA = () => {
               {demoHighlights.map((highlight, index) => (
                 <Card key={index} className="hover-lift shadow-card border-l-4 border-l-primary">
                   <CardContent className="flex items-start gap-4 p-4">
-                    <span className="text-2xl flex-shrink-0">{highlight.icon}</span>
+                    <highlight.icon className="w-6 h-6 flex-shrink-0 text-primary mt-1" />
                     <div>
                       <h4 className="font-bold text-lg mb-1">{highlight.title}</h4>
                       <p className="text-muted-foreground text-sm">{highlight.description}</p>

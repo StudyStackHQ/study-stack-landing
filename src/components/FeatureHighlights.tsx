@@ -1,30 +1,31 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Bot, Video, Search, DollarSign, Smartphone, Zap, Trophy } from "lucide-react";
 
 const FeatureHighlights = () => {
   const features = [
     {
-      icon: "🤖",
+      icon: Bot,
       title: "AI-Powered Intelligence",
       subtitle: "Your Documents, Supercharged",
       description: "Don't just store your notes—make them interactive. Our AI reads your PDFs and answers questions instantly, with citations to exact page locations. It's like having a personal tutor for every document.",
       gradient: "gradient-hero"
     },
     {
-      icon: "🎥",
+      icon: Video,
       title: "Live Study Streaming",
       subtitle: "Twitch Meets Academia",
       description: "Host live study sessions, share your screen, and earn money through tips and donations. Students can follow their favorite creators and get notified when they go live.",
       gradient: "gradient-energy"
     },
     {
-      icon: "🔍",
+      icon: Search,
       title: "Smart Search That Actually Works",
       subtitle: "Find Exactly What You Need",
       description: "Search inside document content, not just titles. Filter by university, subject, document type, and rating. Our Elasticsearch engine makes finding the right materials effortless.",
       gradient: "gradient-creative"
     },
     {
-      icon: "💰",
+      icon: DollarSign,
       title: "Multiple Revenue Streams",
       subtitle: "Get Paid for Your Hard Work",
       description: "One-time sales, monthly subscriptions, live tips, and premium features. Top creators could earn $500-2000/month depending on content quality and audience.",
@@ -48,8 +49,8 @@ const FeatureHighlights = () => {
           {features.map((feature, index) => (
             <Card key={index} className="hover-lift shadow-card border-2 border-border/50 overflow-hidden group">
               <CardHeader className="pb-4">
-                <div className={`w-16 h-16 mb-4 ${feature.gradient} rounded-xl flex items-center justify-center text-3xl group-hover:scale-110 transition-smooth`}>
-                  {feature.icon}
+                <div className={`w-16 h-16 mb-4 ${feature.gradient} rounded-xl flex items-center justify-center text-white group-hover:scale-110 transition-smooth`}>
+                  <feature.icon className="w-8 h-8" />
                 </div>
                 <CardTitle className="text-2xl font-bold">
                   {feature.title}
@@ -70,19 +71,19 @@ const FeatureHighlights = () => {
         {/* Additional feature cards */}
         <div className="grid md:grid-cols-3 gap-6 mt-16 max-w-5xl mx-auto">
           <Card className="text-center p-6 hover-lift shadow-card">
-            <div className="text-4xl mb-4">📱</div>
+            <Smartphone className="w-12 h-12 mx-auto mb-4 text-accent" />
             <h4 className="font-bold text-lg mb-2">Social Learning Network</h4>
             <p className="text-sm text-muted-foreground">Follow creators, build reputation, get featured in trending sections</p>
           </Card>
           
           <Card className="text-center p-6 hover-lift shadow-card">
-            <div className="text-4xl mb-4">⚡</div>
+            <Zap className="w-12 h-12 mx-auto mb-4 text-warning" />
             <h4 className="font-bold text-lg mb-2">Lightning Fast</h4>
             <p className="text-sm text-muted-foreground">AI answers in under 2 seconds. Search results instantly as you type</p>
           </Card>
           
           <Card className="text-center p-6 hover-lift shadow-card">
-            <div className="text-4xl mb-4">🏆</div>
+            <Trophy className="w-12 h-12 mx-auto mb-4 text-secondary" />
             <h4 className="font-bold text-lg mb-2">Quality Guaranteed</h4>
             <p className="text-sm text-muted-foreground">All content reviewed and rated by community for accuracy and helpfulness</p>
           </Card>

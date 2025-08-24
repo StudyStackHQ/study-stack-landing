@@ -1,4 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { DollarSign, TrendingUp, Users, Video, Star, BarChart3, Bot, HelpCircle, Search, Crown, Tv, Lock, Flame, Target, UserPlus, Gamepad2 } from "lucide-react";
 import AnimatedCounter from "./AnimatedCounter";
 
 const ValuePropositions = () => {
@@ -20,7 +21,7 @@ const ValuePropositions = () => {
             <div className="absolute inset-0 gradient-success opacity-5 group-hover:opacity-10 transition-all duration-500" />
             <CardHeader className="text-center pb-4 relative z-10">
               <div className="w-20 h-20 mx-auto mb-4 gradient-success rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-glow">
-                <span className="text-4xl animate-pulse">💰</span>
+                <DollarSign className="w-10 h-10 text-white animate-pulse" />
               </div>
               <CardTitle className="text-2xl md:text-3xl font-bold group-hover:text-secondary transition-colors">
                 For Content Creators
@@ -29,26 +30,26 @@ const ValuePropositions = () => {
                 "From Study Notes to Side Hustle"
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-4 relative z-10">
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
-                  <span className="text-secondary text-xl">💸</span>
+                  <TrendingUp className="w-5 h-5 text-secondary mt-1" />
                   <span>Turn your hard work into income streams</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-secondary text-xl">👥</span>
+                  <Users className="w-5 h-5 text-secondary mt-1" />
                   <span>Build a following around your academic expertise</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-warning text-xl">🎥</span>
+                  <Video className="w-5 h-5 text-warning mt-1" />
                   <span>Host live study sessions with donations and tips</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-accent text-xl">⭐</span>
+                  <Star className="w-5 h-5 text-accent mt-1" />
                   <span>Set subscription tiers for premium content access</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-primary text-xl">📊</span>
+                  <BarChart3 className="w-5 h-5 text-primary mt-1" />
                   <span>Get detailed analytics on your content performance</span>
                 </div>
               </div>
@@ -60,7 +61,7 @@ const ValuePropositions = () => {
             <div className="absolute inset-0 gradient-hero opacity-5 group-hover:opacity-10 transition-all duration-500" />
             <CardHeader className="text-center pb-4 relative z-10">
               <div className="w-20 h-20 mx-auto mb-4 gradient-hero rounded-full flex items-center justify-center group-hover:scale-110 transition-all duration-300 shadow-glow">
-                <span className="text-4xl">🤖</span>
+                <Bot className="w-10 h-10 text-white" />
               </div>
               <CardTitle className="text-2xl md:text-3xl font-bold group-hover:text-primary transition-colors">
                 For Content Consumers
@@ -69,26 +70,26 @@ const ValuePropositions = () => {
                 "AI-Powered Study Success"
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-4 relative z-10">
               <div className="space-y-3">
                 <div className="flex items-start gap-3">
-                  <span className="text-primary text-xl">❓</span>
+                  <HelpCircle className="w-5 h-5 text-primary mt-1" />
                   <span>Ask questions and get instant answers from any document</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-primary text-xl">🔍</span>
+                  <Search className="w-5 h-5 text-primary mt-1" />
                   <span>Search inside PDFs with advanced filtering</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-accent text-xl">👑</span>
+                  <Crown className="w-5 h-5 text-accent mt-1" />
                   <span>Follow top performers in your field</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-warning text-xl">📺</span>
+                  <Tv className="w-5 h-5 text-warning mt-1" />
                   <span>Join live study sessions and interactive streams</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-secondary text-xl">🔒</span>
+                  <Lock className="w-5 h-5 text-secondary mt-1" />
                   <span>Access exclusive content from verified creators</span>
                 </div>
               </div>
@@ -104,26 +105,26 @@ const ValuePropositions = () => {
             </h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-muted-foreground">
               <div className="flex items-center justify-center gap-2 hover:scale-110 transition-transform cursor-pointer">
-                <span className="text-accent text-xl animate-pulse">🔥</span>
+                <Flame className="w-5 h-5 text-accent animate-pulse" />
                 <span className="font-medium">Trending content</span>
               </div>
               <div className="flex items-center justify-center gap-2 hover:scale-110 transition-transform cursor-pointer">
-                <span className="text-primary text-xl">🎯</span>
+                <Target className="w-5 h-5 text-primary" />
                 <span className="font-medium">AI recommendations</span>
               </div>
               <div className="flex items-center justify-center gap-2 hover:scale-110 transition-transform cursor-pointer">
-                <span className="text-secondary text-xl">👫</span>
+                <UserPlus className="w-5 h-5 text-secondary" />
                 <span className="font-medium">Study groups</span>
               </div>
               <div className="flex items-center justify-center gap-2 hover:scale-110 transition-transform cursor-pointer">
-                <span className="text-warning text-xl animate-bounce">🎮</span>
+                <Gamepad2 className="w-5 h-5 text-warning animate-bounce" />
                 <span className="font-medium">Twitch for education</span>
               </div>
             </div>
             
             {/* Added earnings preview */}
             <div className="mt-8 flex justify-center items-center gap-2 text-sm text-secondary font-semibold">
-              <span>💰</span>
+              <DollarSign className="w-4 h-4" />
               <span>Top creators earning </span>
               <AnimatedCounter end={2000} prefix="$" suffix="/month" />
             </div>

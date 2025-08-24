@@ -1,4 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader } from "@/components/ui/card";
+import { Stethoscope, Wrench, Briefcase, Calculator, Building2, Rocket, FlaskConical, Zap, GraduationCap, Star, Target } from "lucide-react";
+import AnimatedCounter from "./AnimatedCounter";
 
 const Testimonials = () => {
   const testimonials = [
@@ -6,44 +8,44 @@ const Testimonials = () => {
       text: "I got early access to StudyStack and it's incredible! The AI feature answered my calculus questions better than my textbook. Can't wait for the full launch!",
       author: "Sarah M.",
       role: "Pre-Med Student (Beta Tester)",
-      emoji: "🩺",
+      icon: Stethoscope,
       rating: 5
     },
     {
       text: "The demo blew my mind. Being able to ask questions directly to my lecture notes is exactly what I've been looking for. Signed up for the waitlist immediately.",
       author: "Marcus L.",
       role: "Engineering Student", 
-      emoji: "⚙️",
+      icon: Wrench,
       rating: 5
     },
     {
       text: "As a beta tester, I can see this is going to revolutionize how students share and learn from each other. The quality of materials is already amazing.",
       author: "Priya K.",
       role: "Business Major (Beta Tester)",
-      emoji: "💼",
+      icon: Briefcase,
       rating: 5
     },
     {
       text: "I have over 200 study guides ready to upload the moment StudyStack launches. The demo showed me exactly how I can turn my notes into income.",
       author: "Alex R.",
       role: "Math Tutor",
-      emoji: "🧮",  
+      icon: Calculator,  
       rating: 5
     },
     {
       text: "Been waiting for a platform like this! My MCAT prep materials are going to help so many students, and I love that I can earn money helping others succeed.",
       author: "David C.",
       role: "Medical Student",
-      emoji: "🏥",
+      icon: Building2,
       rating: 5
     }
   ];
 
   const stats = [
-    { label: "Students on waitlist", value: "500+", icon: "🚀" },
-    { label: "Beta testers providing feedback", value: "50+", icon: "🧪" },
-    { label: "Target AI response time", value: "<2 seconds", icon: "⚡" },
-    { label: "Universities represented in beta", value: "10+", icon: "🎓" }
+    { label: "Students on waitlist", value: "500+", icon: Rocket },
+    { label: "Beta testers providing feedback", value: "50+", icon: FlaskConical },
+    { label: "Target AI response time", value: "<2 seconds", icon: Zap },
+    { label: "Universities represented in beta", value: "10+", icon: GraduationCap }
   ];
 
   return (
@@ -66,7 +68,7 @@ const Testimonials = () => {
               <CardHeader className="pb-4 relative z-10">
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-3">
-                    <span className="text-3xl">{testimonial.emoji}</span>
+                    <testimonial.icon className="w-8 h-8 text-accent" />
                     <div>
                       <h4 className="font-bold text-lg">{testimonial.author}</h4>
                       <CardDescription className="text-sm">{testimonial.role}</CardDescription>
@@ -76,7 +78,7 @@ const Testimonials = () => {
                 {/* Star rating */}
                 <div className="flex gap-1 mb-3">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <span key={i} className="text-warning text-lg">⭐</span>
+                    <Star key={i} className="w-4 h-4 text-warning fill-warning" />
                   ))}
                 </div>
               </CardHeader>
@@ -97,7 +99,7 @@ const Testimonials = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl mb-2">{stat.icon}</div>
+                <stat.icon className="w-8 h-8 mx-auto mb-2 text-accent" />
                 <div className="text-2xl md:text-3xl font-bold text-primary mb-1">
                   {stat.value}
                 </div>
@@ -110,7 +112,7 @@ const Testimonials = () => {
           
           <div className="text-center mt-8">
             <div className="inline-flex items-center gap-2 bg-secondary/10 text-secondary px-4 py-2 rounded-full font-semibold">
-              <span>🎯</span>
+              <Target className="w-4 h-4 animate-pulse" />
               <span>Launching Fall 2025</span>
             </div>
           </div>

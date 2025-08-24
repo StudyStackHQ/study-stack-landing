@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Rocket } from "lucide-react";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -80,9 +81,9 @@ const Footer = () => {
         {/* Launch notification */}
         <div className="mt-8 text-center">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary/10 to-accent/10 px-6 py-3 rounded-full border border-primary/20">
-            <span className="animate-pulse">🚀</span>
+            <Rocket className="w-5 h-5 animate-pulse text-primary" />
             <span className="font-semibold text-primary">Launching Fall 2025</span>
-            <span className="animate-pulse">🚀</span>
+            <Rocket className="w-5 h-5 animate-pulse text-primary" />
           </div>
         </div>
       </div>
