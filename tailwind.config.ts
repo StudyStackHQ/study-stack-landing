@@ -27,7 +27,8 @@ export default {
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))',
-					light: 'hsl(var(--primary-light))'
+					button: 'hsl(var(--primary-button))',
+					accent: 'hsl(var(--primary-accent))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -73,8 +74,9 @@ export default {
 				'warning-bg': 'hsl(var(--warning-bg))'
 			},
 			fontFamily: {
-				sans: ['Nunito', 'Inter', 'system-ui', 'sans-serif'],
-				display: ['Nunito', 'Inter', 'system-ui', 'sans-serif'],
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+				serif: ['Georgia', 'Times New Roman', 'serif'],
+				heading: ['Georgia', 'Times New Roman', 'serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
