@@ -38,9 +38,9 @@
     --accent: 72 45% 35%;             /* Warm olive-green derived from cream */
     --accent-foreground: 0 0% 100%;
     
-    /* High-contrast neutrals */
-    --muted: 0 0% 96%;
-    --muted-foreground: 0 0% 35%;
+    /* High-contrast neutrals - derived from cream */
+    --muted: 72 50% 96%;              /* Light cream-tinted background */
+    --muted-foreground: 72 15% 35%;   /* Warm brown-grey text */
 
     /* Supporting Colors - More restrained */
     --warning: 25 95% 45%;
