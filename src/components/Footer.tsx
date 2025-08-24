@@ -7,7 +7,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-b from-muted/30 to-muted/50 border-t border-border/50">
+    <footer className="bg-gray-50 border-t border-gray-100">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom section */}
-        <div className="border-t border-border/30 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-gray-100 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-muted-foreground text-sm">
             © 2025 StudyStack. All rights reserved. Coming Fall 2025 - Where Students Will Learn, Earn, and Succeed Together.
           </div>
@@ -80,10 +80,10 @@ const Footer = () => {
 
         {/* Launch notification */}
         <div className="mt-8 text-center">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-primary/10 to-accent/10 px-6 py-3 rounded-full border border-primary/20">
-            <Rocket className="w-5 h-5 animate-pulse text-primary" />
+          <div className="inline-flex items-center gap-2 bg-primary/10 px-6 py-3 rounded-full border border-primary/20">
+            <Rocket className="w-5 h-5 text-primary" />
             <span className="font-semibold text-primary">Launching Fall 2025</span>
-            <Rocket className="w-5 h-5 animate-pulse text-primary" />
+            <Rocket className="w-5 h-5 text-primary" />
           </div>
         </div>
       </div>

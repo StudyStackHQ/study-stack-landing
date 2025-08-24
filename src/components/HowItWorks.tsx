@@ -79,7 +79,7 @@ const HowItWorks = () => {
   ];
 
   return (
-    <section id="how-it-works" className="py-20 bg-gradient-to-b from-muted/20 to-transparent">
+    <section id="how-it-works" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
@@ -102,16 +102,16 @@ const HowItWorks = () => {
             
             <div className="space-y-6">
               {creatorSteps.map((step, index) => (
-                <Card key={index} className="hover-lift shadow-card border-l-4 border-l-secondary">
+                <Card key={index} className="hover-lift border border-border/30 shadow-sm bg-white">
                   <CardContent className="flex items-center gap-4 p-6">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 rounded-full gradient-success flex items-center justify-center text-white font-bold text-lg">
+                      <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary font-bold text-sm">
                         {step.step}
                       </div>
                     </div>
                     <div className="flex-grow">
                       <div className="flex items-center gap-2 mb-1">
-                        <step.icon className="w-5 h-5 text-secondary" />
+                        <step.icon className="w-4 h-4 text-muted-foreground" />
                         <h4 className="font-bold text-lg">{step.title}</h4>
                       </div>
                       <p className="text-muted-foreground">{step.description}</p>
@@ -133,16 +133,16 @@ const HowItWorks = () => {
             
             <div className="space-y-6">
               {studentSteps.map((step, index) => (
-                <Card key={index} className="hover-lift shadow-card border-l-4 border-l-primary">
+                <Card key={index} className="hover-lift border border-border/30 shadow-sm bg-white">
                   <CardContent className="flex items-center gap-4 p-6">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 rounded-full gradient-hero flex items-center justify-center text-white font-bold text-lg">
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-sm">
                         {step.step}
                       </div>
                     </div>
                     <div className="flex-grow">
                       <div className="flex items-center gap-2 mb-1">
-                        <step.icon className="w-5 h-5 text-primary" />
+                        <step.icon className="w-4 h-4 text-muted-foreground" />
                         <h4 className="font-bold text-lg">{step.title}</h4>
                       </div>
                       <p className="text-muted-foreground">{step.description}</p>

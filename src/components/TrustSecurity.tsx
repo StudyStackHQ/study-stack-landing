@@ -24,7 +24,7 @@ const TrustSecurity = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted/20">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
@@ -37,9 +37,9 @@ const TrustSecurity = () => {
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {trustFeatures.map((feature, index) => (
-            <Card key={index} className={`hover-lift shadow-card border-2 ${feature.color} text-center h-full`}>
+            <Card key={index} className="hover-lift border border-border/30 shadow-sm text-center h-full bg-white">
               <CardHeader className="pb-4">
-                <feature.icon className="w-16 h-16 mx-auto mb-4 text-accent" />
+                <feature.icon className="w-12 h-12 mx-auto mb-4 text-muted-foreground" />
                 <CardTitle className="text-xl font-bold">{feature.title}</CardTitle>
               </CardHeader>
               <CardContent>
@@ -53,26 +53,26 @@ const TrustSecurity = () => {
 
         {/* Additional trust indicators */}
         <div className="mt-16 text-center">
-          <div className="bg-card rounded-2xl p-8 shadow-card border border-border/50 max-w-4xl mx-auto">
+          <div className="bg-white rounded-2xl p-8 border border-gray-100 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold mb-6 text-gradient-creative">Why Students Trust StudyStack</h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
               <div>
-                <CheckCircle className="w-8 h-8 mx-auto mb-2 text-primary" />
+                <CheckCircle className="w-6 h-6 mx-auto mb-2 text-muted-foreground" />
                 <div className="font-semibold text-primary">Student-First</div>
                 <div className="text-sm text-muted-foreground">Built by students, for students</div>
               </div>
               <div>
-                <KeyRound className="w-8 h-8 mx-auto mb-2 text-secondary" />
+                <KeyRound className="w-6 h-6 mx-auto mb-2 text-muted-foreground" />
                 <div className="font-semibold text-secondary">Secure by Design</div>
                 <div className="text-sm text-muted-foreground">Enterprise-grade security</div>
               </div>
               <div>
-                <FileText className="w-8 h-8 mx-auto mb-2 text-accent" />
+                <FileText className="w-6 h-6 mx-auto mb-2 text-muted-foreground" />
                 <div className="font-semibold text-accent">Fully Compliant</div>
                 <div className="text-sm text-muted-foreground">GDPR, CCPA, and more</div>
               </div>
               <div>
-                <Handshake className="w-8 h-8 mx-auto mb-2 text-warning" />
+                <Handshake className="w-6 h-6 mx-auto mb-2 text-muted-foreground" />
                 <div className="font-semibold text-warning">Fair & Transparent</div>
                 <div className="text-sm text-muted-foreground">No hidden fees or surprises</div>
               </div>

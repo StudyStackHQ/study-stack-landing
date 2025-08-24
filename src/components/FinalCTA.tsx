@@ -55,7 +55,7 @@ const FinalCTA = () => {
   ];
 
   return (
-    <section className="py-20">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         {/* Main CTA */}
         <div className="text-center mb-20">
@@ -92,9 +92,9 @@ const FinalCTA = () => {
             </h3>
             <div className="space-y-4">
               {benefits.map((benefit, index) => (
-                <Card key={index} className="hover-lift shadow-card border-l-4 border-l-secondary">
+                <Card key={index} className="hover-lift border border-border/30 shadow-sm bg-white">
                   <CardContent className="flex items-start gap-4 p-4">
-                    <benefit.icon className="w-6 h-6 flex-shrink-0 text-secondary mt-1" />
+                    <benefit.icon className="w-5 h-5 flex-shrink-0 text-muted-foreground mt-1" />
                     <div>
                       <h4 className="font-bold text-lg mb-1">{benefit.title}</h4>
                       <p className="text-muted-foreground text-sm">{benefit.description}</p>
@@ -112,9 +112,9 @@ const FinalCTA = () => {
             </h3>
             <div className="space-y-4">
               {demoHighlights.map((highlight, index) => (
-                <Card key={index} className="hover-lift shadow-card border-l-4 border-l-primary">
+                <Card key={index} className="hover-lift border border-border/30 shadow-sm bg-white">
                   <CardContent className="flex items-start gap-4 p-4">
-                    <highlight.icon className="w-6 h-6 flex-shrink-0 text-primary mt-1" />
+                    <highlight.icon className="w-5 h-5 flex-shrink-0 text-muted-foreground mt-1" />
                     <div>
                       <h4 className="font-bold text-lg mb-1">{highlight.title}</h4>
                       <p className="text-muted-foreground text-sm">{highlight.description}</p>
@@ -127,7 +127,7 @@ const FinalCTA = () => {
         </div>
 
         {/* Final CTA section */}
-        <div className="bg-gradient-to-r from-primary/10 via-accent/10 to-secondary/10 rounded-3xl p-8 md:p-12 text-center border border-primary/20 shadow-elegant">
+        <div className="bg-gray-50 rounded-3xl p-8 md:p-12 text-center border border-gray-100">
           <h3 className="text-2xl md:text-4xl font-bold mb-4">
             Ready to Transform How Students <span className="text-gradient-creative">Learn and Earn</span>?
           </h3>

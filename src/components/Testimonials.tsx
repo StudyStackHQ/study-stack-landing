@@ -56,7 +56,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-20">
+    <section id="testimonials" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
@@ -67,15 +67,14 @@ const Testimonials = () => {
           </p>
         </div>
 
-        {/* Testimonials Grid with enhanced styling */}
+        {/* Testimonials Grid with simplified styling */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16 max-w-7xl mx-auto">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="hover-lift shadow-card h-full group border-2 border-border/30 hover:border-primary/30 transition-all duration-300 overflow-hidden">
-              <div className="absolute inset-0 gradient-hero opacity-0 group-hover:opacity-5 transition-all duration-500" />
+            <Card key={index} className="hover-lift border border-border/30 shadow-sm h-full group bg-white">
               <CardHeader className="pb-4 relative z-10">
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-3">
-                    <testimonial.icon className="w-8 h-8 text-accent" />
+                    <testimonial.icon className="w-6 h-6 text-muted-foreground" />
                     <div>
                       <h4 className="font-bold text-lg">{testimonial.author}</h4>
                       <CardDescription className="text-sm">{testimonial.role}</CardDescription>
@@ -99,14 +98,14 @@ const Testimonials = () => {
         </div>
 
         {/* Platform Stats */}
-        <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-8 border border-primary/10">
+        <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
           <h3 className="text-2xl md:text-3xl font-bold text-center mb-8 text-gradient-hero">
             Platform Stats
           </h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <stat.icon className="w-8 h-8 mx-auto mb-2 text-accent" />
+                <stat.icon className="w-6 h-6 mx-auto mb-2 text-muted-foreground" />
                 <div className="text-2xl md:text-3xl font-bold text-primary mb-1">
                   {stat.value}
                 </div>
@@ -119,7 +118,7 @@ const Testimonials = () => {
           
           <div className="text-center mt-8">
             <div className="inline-flex items-center gap-2 bg-secondary/10 text-secondary px-4 py-2 rounded-full font-semibold">
-              <Target className="w-4 h-4 animate-pulse" />
+              <Target className="w-4 h-4" />
               <span>Launching Fall 2025</span>
             </div>
           </div>

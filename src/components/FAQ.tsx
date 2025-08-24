@@ -74,7 +74,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="py-20 bg-gradient-to-b from-muted/20 to-transparent">
+    <section id="faq" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
@@ -87,8 +87,8 @@ const FAQ = () => {
 
         <div className="max-w-4xl mx-auto space-y-8">
           {faqSections.map((section, sectionIndex) => (
-            <div key={sectionIndex} className="bg-card rounded-2xl shadow-card border border-border/50 overflow-hidden">
-              <div className="bg-gradient-to-r from-primary/5 to-accent/5 px-6 py-4 border-b border-border/50">
+            <div key={sectionIndex} className="bg-white rounded-2xl border border-gray-100 overflow-hidden">
+              <div className="bg-gray-50 px-6 py-4 border-b border-gray-100">
                 <h3 className="text-xl font-bold text-primary">{section.title}</h3>
               </div>
               
