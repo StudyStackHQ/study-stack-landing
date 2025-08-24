@@ -14,7 +14,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="mb-4">
-              <img src={studyStackLogo} alt="StudyStack - Knowledge • Community • Income" className="h-10" />
+              <img src={studyStackLogo} alt="StudyStack - Knowledge • Community • Income" className="h-96" />
             </div>
             <p className="text-muted-foreground mb-6 max-w-md leading-relaxed">
               The social learning platform where students turn knowledge into income. 
