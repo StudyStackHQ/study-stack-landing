@@ -42,9 +42,9 @@ const HeroSection = () => {
         
         {/* Hero description */}
         <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-4xl mx-auto leading-relaxed">
-          Upload your study materials, build a following, and get paid for your expertise. 
-          StudyStack combines AI-powered document search with social features and live streaming 
-          to create the ultimate student marketplace.
+          Document your study sessions, search through your own notes instantly with AI, and host group study sessions online. 
+          Create valuable study content, sell it to fellow students, make new friends, and get those A's together. 
+          StudyStack is where studying meets community and income.
         </p>
         
         {/* CTA buttons */}
