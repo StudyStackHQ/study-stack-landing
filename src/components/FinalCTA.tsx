@@ -127,7 +127,7 @@ const FinalCTA = () => {
         </div>
 
         {/* Final CTA section */}
-        <div className="bg-section rounded-3xl p-8 md:p-12 text-center border border-primary/20">
+        <div className="bg-section rounded-3xl p-8 md:p-12 text-center border border-border/30">
           <h3 className="text-2xl md:text-4xl font-bold mb-4">
             Ready to Transform How Students <span className="text-gradient-creative">Learn and Earn</span>?
           </h3>

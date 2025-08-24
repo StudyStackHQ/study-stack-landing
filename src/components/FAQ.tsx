@@ -87,8 +87,8 @@ const FAQ = () => {
 
         <div className="max-w-4xl mx-auto space-y-8">
           {faqSections.map((section, sectionIndex) => (
-            <div key={sectionIndex} className="bg-card rounded-2xl border border-primary/20 overflow-hidden">
-              <div className="bg-section px-6 py-4 border-b border-primary/20">
+            <div key={sectionIndex} className="bg-card rounded-2xl border border-border/30 overflow-hidden">
+              <div className="bg-section px-6 py-4 border-b border-border/30">
                 <h3 className="text-xl font-bold text-primary">{section.title}</h3>
               </div>
               
