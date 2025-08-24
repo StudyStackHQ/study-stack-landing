@@ -4,14 +4,25 @@ import heroImage from "@/assets/hero-image.jpg";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 gradient-hero opacity-10" />
+      {/* Animated mesh background */}
+      <div className="absolute inset-0 gradient-mesh" />
       
-      {/* Background image */}
+      {/* Floating geometric shapes */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-20 left-10 w-20 h-20 gradient-hero rounded-full opacity-20 floating-animation" style={{ animationDelay: '0s' }} />
+        <div className="absolute top-40 right-20 w-16 h-16 gradient-success rounded-lg opacity-30 floating-animation" style={{ animationDelay: '2s' }} />
+        <div className="absolute bottom-40 left-20 w-12 h-12 gradient-creative rounded-full opacity-25 floating-animation" style={{ animationDelay: '4s' }} />
+        <div className="absolute bottom-20 right-10 w-24 h-24 gradient-energy rounded-lg opacity-20 floating-animation" style={{ animationDelay: '1s' }} />
+      </div>
+      
+      {/* Background image with enhanced overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-20"
+        className="absolute inset-0 bg-cover bg-center opacity-15"
         style={{ backgroundImage: `url(${heroImage})` }}
       />
+      
+      {/* Radial gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-radial from-transparent via-background/5 to-background/20" />
       
       <div className="relative z-10 container mx-auto px-4 text-center max-w-6xl">
         {/* Main headline with musical note emojis */}
@@ -36,35 +47,35 @@ const HeroSection = () => {
         </p>
         
         {/* CTA buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
           <Button 
             size="lg" 
-            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold hover-glow transition-smooth"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground px-10 py-5 text-xl font-semibold pulse-glow hover:scale-105 transition-bounce shadow-elegant"
           >
             Join the Waitlist - Get Early Access
           </Button>
           <Button 
             variant="outline" 
             size="lg"
-            className="border-accent text-accent hover:bg-accent hover:text-accent-foreground px-8 py-4 text-lg font-semibold transition-smooth"
+            className="border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground px-10 py-5 text-xl font-semibold magnetic-hover transition-bounce glass-card"
           >
             Book a Demo
           </Button>
         </div>
         
-        {/* Trust indicators */}
-        <div className="mt-12 flex flex-col sm:flex-row gap-8 justify-center items-center text-sm text-muted-foreground">
-          <div className="flex items-center gap-2">
-            <span className="text-secondary">🚀</span>
-            <span>500+ Students on waitlist</span>
+        {/* Trust indicators with enhanced styling */}
+        <div className="flex flex-col sm:flex-row gap-8 justify-center items-center text-sm">
+          <div className="flex items-center gap-2 bg-secondary/10 px-4 py-2 rounded-full glass-card hover:scale-105 transition-bounce">
+            <span className="text-secondary text-lg animate-pulse">🚀</span>
+            <span className="font-semibold">500+ Students on waitlist</span>
           </div>
-          <div className="flex items-center gap-2">
-            <span className="text-warning">⚡</span>
-            <span>&lt;2 seconds AI response time</span>
+          <div className="flex items-center gap-2 bg-warning/10 px-4 py-2 rounded-full glass-card hover:scale-105 transition-bounce">
+            <span className="text-warning text-lg">⚡</span>
+            <span className="font-semibold">&lt;2 seconds AI response time</span>
           </div>
-          <div className="flex items-center gap-2">
-            <span className="text-accent">🎓</span>
-            <span>10+ Universities in beta</span>
+          <div className="flex items-center gap-2 bg-accent/10 px-4 py-2 rounded-full glass-card hover:scale-105 transition-bounce">
+            <span className="text-accent text-lg">🎓</span>
+            <span className="font-semibold">10+ Universities in beta</span>
           </div>
         </div>
       </div>

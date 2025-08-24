@@ -6,31 +6,36 @@ const Testimonials = () => {
       text: "I got early access to StudyStack and it's incredible! The AI feature answered my calculus questions better than my textbook. Can't wait for the full launch!",
       author: "Sarah M.",
       role: "Pre-Med Student (Beta Tester)",
-      emoji: "🩺"
+      emoji: "🩺",
+      rating: 5
     },
     {
       text: "The demo blew my mind. Being able to ask questions directly to my lecture notes is exactly what I've been looking for. Signed up for the waitlist immediately.",
       author: "Marcus L.",
-      role: "Engineering Student",
-      emoji: "⚙️"
+      role: "Engineering Student", 
+      emoji: "⚙️",
+      rating: 5
     },
     {
       text: "As a beta tester, I can see this is going to revolutionize how students share and learn from each other. The quality of materials is already amazing.",
       author: "Priya K.",
       role: "Business Major (Beta Tester)",
-      emoji: "💼"
+      emoji: "💼",
+      rating: 5
     },
     {
       text: "I have over 200 study guides ready to upload the moment StudyStack launches. The demo showed me exactly how I can turn my notes into income.",
       author: "Alex R.",
       role: "Math Tutor",
-      emoji: "🧮"
+      emoji: "🧮",  
+      rating: 5
     },
     {
       text: "Been waiting for a platform like this! My MCAT prep materials are going to help so many students, and I love that I can earn money helping others succeed.",
       author: "David C.",
       role: "Medical Student",
-      emoji: "🏥"
+      emoji: "🏥",
+      rating: 5
     }
   ];
 
@@ -42,7 +47,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20">
+    <section id="testimonials" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
@@ -53,21 +58,30 @@ const Testimonials = () => {
           </p>
         </div>
 
-        {/* Testimonials Grid */}
+        {/* Testimonials Grid with enhanced styling */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16 max-w-7xl mx-auto">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="hover-lift shadow-card h-full">
-              <CardHeader className="pb-4">
-                <div className="flex items-center gap-3">
-                  <span className="text-2xl">{testimonial.emoji}</span>
-                  <div>
-                    <h4 className="font-bold">{testimonial.author}</h4>
-                    <CardDescription className="text-sm">{testimonial.role}</CardDescription>
+            <Card key={index} className="hover-lift shadow-card h-full group border-2 border-border/30 hover:border-primary/30 transition-all duration-300 overflow-hidden">
+              <div className="absolute inset-0 gradient-hero opacity-0 group-hover:opacity-5 transition-all duration-500" />
+              <CardHeader className="pb-4 relative z-10">
+                <div className="flex items-center justify-between mb-3">
+                  <div className="flex items-center gap-3">
+                    <span className="text-3xl">{testimonial.emoji}</span>
+                    <div>
+                      <h4 className="font-bold text-lg">{testimonial.author}</h4>
+                      <CardDescription className="text-sm">{testimonial.role}</CardDescription>
+                    </div>
                   </div>
                 </div>
+                {/* Star rating */}
+                <div className="flex gap-1 mb-3">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <span key={i} className="text-warning text-lg">⭐</span>
+                  ))}
+                </div>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground italic leading-relaxed">
+              <CardContent className="relative z-10">
+                <p className="text-muted-foreground italic leading-relaxed text-sm">
                   "{testimonial.text}"
                 </p>
               </CardContent>
