@@ -25,7 +25,7 @@ const Navigation = () => {
         : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-32 py-4">
+        <div className="flex items-center justify-between h-80 py-4">
           {/* Logo */}
           <div className="flex items-center">
             <img src={studyStackLogo} alt="StudyStack - Knowledge • Community • Income" className="h-80" />
