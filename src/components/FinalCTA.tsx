@@ -60,7 +60,7 @@ const FinalCTA = () => {
         {/* Main CTA */}
         <div className="text-center mb-20">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Be Among the First to Experience the <span className="text-gradient-hero">Future of Learning</span>
+            Join <span className="text-gradient-hero">StudyStack</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto mb-10 leading-relaxed">
             Join our exclusive waitlist and get priority access when we launch. Plus, book a personalized demo to see StudyStack in action.
