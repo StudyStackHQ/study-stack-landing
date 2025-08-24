@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader } from "@/components/ui/card";
-import { Stethoscope, Wrench, Briefcase, Calculator, Building2, Rocket, FlaskConical, Zap, GraduationCap, Star, Target } from "lucide-react";
+import { Stethoscope, Wrench, Briefcase, Calculator, Building2, Rocket, FlaskConical, Zap, GraduationCap, Star, Target, Heart } from "lucide-react";
 import AnimatedCounter from "./AnimatedCounter";
 
 const Testimonials = () => {
@@ -23,6 +23,13 @@ const Testimonials = () => {
       author: "Priya K.",
       role: "Business Major (Beta Tester)",
       icon: Briefcase,
+      rating: 5
+    },
+    {
+      text: "My 10-year-old daughter and her study group use StudyStack with my supervision. They share their science project notes and math worksheets, and they've actually earned $15 this month! It's teaching her about entrepreneurship while improving her studies. The platform is safe and educational.",
+      author: "Jennifer L.",
+      role: "Parent of Elementary Student",
+      icon: Heart,
       rating: 5
     },
     {
