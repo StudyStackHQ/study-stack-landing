@@ -1,12 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Music, Rocket, Zap, GraduationCap } from "lucide-react";
 import heroImage from "@/assets/hero-image.jpg";
+import studyStackBg from "@/assets/studystack-bg.svg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-hero">
-      {/* Subtle mesh background */}
-      <div className="absolute inset-0 bg-hero" />
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{backgroundImage: `url(${studyStackBg})`, backgroundRepeat: 'repeat', backgroundSize: '320px 320px'}}>
+      {/* Subtle overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-white/10" />
       
       {/* Minimal floating elements */}
       <div className="absolute inset-0 overflow-hidden">
