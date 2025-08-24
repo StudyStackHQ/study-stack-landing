@@ -6,43 +6,43 @@
 
 @layer base {
   :root {
-    /* Elementary-Friendly Color Palette */
-    --background: 0 0% 99%;
-    --foreground: 210 10% 23%;
+    /* High-Contrast Minimal Palette */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 12%;
 
-    --card: 0 0% 99%;
-    --card-foreground: 210 10% 23%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 12%;
 
-    --popover: 0 0% 99%;
-    --popover-foreground: 210 10% 23%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 12%;
 
-    /* Primary - Soft Trustworthy Blue (#4A90E2) */
-    --primary: 213 72% 59%;
+    /* Primary - Strong Blue for high contrast */
+    --primary: 213 89% 42%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 213 72% 69%;
+    --primary-light: 213 89% 52%;
 
-    /* Secondary - Success/Growth Green (#7ED321) */
-    --secondary: 84 85% 51%;
+    /* Secondary - Reserved for success states only */
+    --secondary: 142 71% 32%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Accent - Creative Purple for AI (#9013FE) */
-    --accent: 266 99% 54%;
+    /* Accent - Minimal purple, used sparingly */
+    --accent: 266 85% 35%;
     --accent-foreground: 0 0% 100%;
     
-    /* Child-Friendly Neutrals */
-    --muted: 210 17% 98%;
-    --muted-foreground: 210 11% 46%;
+    /* High-contrast neutrals */
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 35%;
 
-    /* Supporting Colors */
-    --warning: 35 100% 50%;
+    /* Supporting Colors - More restrained */
+    --warning: 25 95% 45%;
     --warning-foreground: 0 0% 100%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 84% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 17% 92%;
-    --input: 210 17% 95%;
-    --ring: 213 72% 59%;
+    --border: 0 0% 88%;
+    --input: 0 0% 94%;
+    --ring: 213 89% 42%;
 
     --radius: 0.5rem;
 
@@ -51,26 +51,23 @@
     --success-bg: 120 39% 93%;
     --warning-bg: 54 100% 88%;
 
-    /* Gradients with new palette */
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
-    --gradient-success: linear-gradient(135deg, hsl(var(--secondary)), hsl(84 85% 61%));
-    --gradient-creative: linear-gradient(135deg, hsl(var(--accent)), hsl(266 99% 64%));
-    --gradient-energy: linear-gradient(135deg, hsl(var(--warning)), hsl(35 100% 60%));
+    /* Minimal gradients - use sparingly */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
     
-    /* Gentle shadows */
-    --shadow-elegant: 0 10px 30px -10px hsl(var(--primary) / 0.15);
-    --shadow-card: 0 4px 20px -4px hsl(var(--primary) / 0.08);
-    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.12);
+    /* Strong shadows for better contrast */
+    --shadow-elegant: 0 8px 24px -4px hsl(0 0% 0% / 0.12);
+    --shadow-card: 0 2px 8px -2px hsl(0 0% 0% / 0.08);
+    --shadow-strong: 0 12px 32px -8px hsl(0 0% 0% / 0.15);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     --transition-slow: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
     
-    /* Advanced gradients */
-    --gradient-mesh: radial-gradient(ellipse at top, hsl(var(--primary) / 0.1), transparent 50%),
-                     radial-gradient(ellipse at bottom, hsl(var(--accent) / 0.1), transparent 50%);
-    --gradient-floating: linear-gradient(45deg, hsl(var(--primary) / 0.1), hsl(var(--accent) / 0.1), hsl(var(--secondary) / 0.1));
+    /* Subtle background effects */
+    --gradient-mesh: radial-gradient(ellipse at top, hsl(var(--muted)), transparent 50%);
+    --gradient-floating: linear-gradient(45deg, hsl(var(--muted)), hsl(var(--background)));
     
     /* Glassmorphism */
     --glass-background: rgba(255, 255, 255, 0.1);
@@ -129,21 +126,13 @@
 }
 
 @layer components {
-  /* Gradient utilities */
+  /* Minimal gradient utilities */
   .gradient-hero {
     background: var(--gradient-hero);
   }
   
-  .gradient-success {
-    background: var(--gradient-success);
-  }
-  
-  .gradient-creative {
-    background: var(--gradient-creative);
-  }
-  
-  .gradient-energy {
-    background: var(--gradient-energy);
+  .gradient-subtle {
+    background: var(--gradient-subtle);
   }
 
   /* Shadow utilities */
@@ -155,8 +144,8 @@
     box-shadow: var(--shadow-card);
   }
   
-  .shadow-glow {
-    box-shadow: var(--shadow-glow);
+  .shadow-strong {
+    box-shadow: var(--shadow-strong);
   }
 
   /* Animation utilities */
@@ -185,17 +174,9 @@
     @apply shadow-glow scale-105;
   }
 
-  /* Text gradients */
+  /* Minimal text effects */
   .text-gradient-hero {
-    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
-  }
-  
-  .text-gradient-success {
-    @apply bg-gradient-to-r from-secondary via-secondary to-green-400 bg-clip-text text-transparent;
-  }
-
-  .text-gradient-creative {
-    @apply bg-gradient-to-r from-accent to-purple-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent;
   }
 
   /* Supporting color utilities */
