@@ -18,7 +18,7 @@ const HeroSection = () => {
         
         {/* Subheadline */}
         <h2 className="text-xl md:text-3xl lg:text-4xl font-sans font-semibold mb-6 text-primary">
-          The Social Learning Platform Where Students Turn Knowledge Into Income
+          The Social Learning Platform Where Monetize Their Academic Success
         </h2>
         
         {/* Hero description */}
