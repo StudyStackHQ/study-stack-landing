@@ -261,3 +261,10 @@
     transform: translateY(0);
   }
 }
+
+/* StudyStack Background Pattern */
+.studystack-bg {
+  background-image: url('/src/assets/studystack-bg.svg');
+  background-repeat: repeat;
+  background-size: 320px 320px;
+}
