@@ -5,7 +5,7 @@ import studyStackBg from "@/assets/studystack-bg.svg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16" style={{backgroundImage: `url(${studyStackBg})`, backgroundRepeat: 'repeat', backgroundSize: '320px 320px'}}>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-24" style={{backgroundImage: `url(${studyStackBg})`, backgroundRepeat: 'repeat', backgroundSize: '320px 320px'}}>
       {/* Subtle overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-white/10" />
       
