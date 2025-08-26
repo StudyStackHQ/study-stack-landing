@@ -23,9 +23,9 @@
     --primary-accent: 150 42% 30%;    /* #2D6A4F - Accent green */
     --section-bg: 72 100% 97%;        /* #FEFFF2 - Light cream for section backgrounds */
     
-    /* Hero mint green background - harmonized */
-    --hero-bg: 72 45% 85%;            /* Warm mint background */
-    --hero-bg-accent: 72 35% 82%;     /* Warm mint accent */
+    /* Hero background - improved contrast */
+    --hero-bg: 72 30% 92%;            /* Lighter warm background for better contrast */
+    --hero-bg-accent: 72 25% 88%;     /* Lighter warm accent */
     
     /* Supporting colors - harmonized */
     --icon-bg: 72 23% 87%;            /* Warm light background for icons */
