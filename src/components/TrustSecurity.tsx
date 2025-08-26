@@ -24,7 +24,7 @@ const TrustSecurity = () => {
   ];
 
   return (
-    <section className="py-12 bg-white border-t border-border/30">
+    <section className="py-12 bg-section border-t border-border/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
@@ -37,7 +37,7 @@ const TrustSecurity = () => {
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {trustFeatures.map((feature, index) => (
-            <Card key={index} className="hover-lift border border-border/30 shadow-sm text-center h-full bg-white">
+            <Card key={index} className="hover-lift border border-border/30 shadow-sm text-center h-full bg-card">
               <CardHeader className="pb-4">
                 <feature.icon className="w-12 h-12 mx-auto mb-4 text-muted-foreground" />
                 <CardTitle className="text-xl font-bold">{feature.title}</CardTitle>
@@ -53,7 +53,7 @@ const TrustSecurity = () => {
 
         {/* Additional trust indicators */}
         <div className="mt-16 text-center">
-          <div className="bg-white rounded-2xl p-8 border border-gray-100 max-w-4xl mx-auto">
+          <div className="bg-card rounded-2xl p-8 border border-border/30 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold mb-6 text-gradient-creative">Why Students Trust StudyStack</h3>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
               <div>
