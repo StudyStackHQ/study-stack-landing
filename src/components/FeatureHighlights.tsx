@@ -34,7 +34,7 @@ const FeatureHighlights = () => {
   ];
 
   return (
-    <section className="py-12 bg-white border-t border-border/30">
+    <section className="py-12 bg-background border-t border-border/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
@@ -47,7 +47,7 @@ const FeatureHighlights = () => {
 
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {features.map((feature, index) => (
-            <Card key={index} className="hover-lift border border-border/30 shadow-sm overflow-hidden group bg-white">
+            <Card key={index} className="hover-lift border border-border/30 shadow-card overflow-hidden group bg-card">
               <CardHeader className="pb-4">
                 <div className="w-12 h-12 mb-4 bg-section rounded-lg flex items-center justify-center group-hover:scale-110 transition-smooth">
                   <feature.icon className="w-6 h-6 text-primary" />
@@ -70,19 +70,19 @@ const FeatureHighlights = () => {
 
         {/* Additional feature cards */}
         <div className="grid md:grid-cols-3 gap-6 mt-16 max-w-5xl mx-auto">
-          <Card className="text-center p-6 hover-lift border border-border/30 shadow-sm bg-white">
+          <Card className="text-center p-6 hover-lift border border-border/30 shadow-card bg-card">
             <Smartphone className="w-8 h-8 mx-auto mb-4 text-muted-foreground" />
             <h4 className="font-bold text-lg mb-2">Social Learning Network</h4>
             <p className="text-sm text-muted-foreground">Follow creators, build reputation, get featured in trending sections</p>
           </Card>
           
-          <Card className="text-center p-6 hover-lift border border-border/30 shadow-sm bg-white">
+          <Card className="text-center p-6 hover-lift border border-border/30 shadow-card bg-card">
             <Zap className="w-8 h-8 mx-auto mb-4 text-muted-foreground" />
             <h4 className="font-bold text-lg mb-2">Lightning Fast</h4>
             <p className="text-sm text-muted-foreground">AI answers in under 2 seconds. Search results instantly as you type</p>
           </Card>
           
-          <Card className="text-center p-6 hover-lift border border-border/30 shadow-sm bg-white">
+          <Card className="text-center p-6 hover-lift border border-border/30 shadow-card bg-card">
             <Trophy className="w-8 h-8 mx-auto mb-4 text-muted-foreground" />
             <h4 className="font-bold text-lg mb-2">Quality Guaranteed</h4>
             <p className="text-sm text-muted-foreground">All content reviewed and rated by community for accuracy and helpfulness</p>

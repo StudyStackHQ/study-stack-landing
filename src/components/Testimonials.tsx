@@ -48,7 +48,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-12 bg-white border-t border-border/30">
+    <section id="testimonials" className="py-12 bg-background border-t border-border/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
@@ -62,7 +62,7 @@ const Testimonials = () => {
         {/* Testimonials Grid with simplified styling */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16 max-w-7xl mx-auto">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="hover-lift border border-border/30 shadow-sm h-full group bg-white">
+            <Card key={index} className="hover-lift border border-border/30 shadow-card h-full group bg-card">
               <CardHeader className="pb-4 relative z-10">
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-3">
