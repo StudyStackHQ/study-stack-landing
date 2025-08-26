@@ -39,7 +39,7 @@
     --accent-foreground: 0 0% 100%;
     
     /* High-contrast neutrals - derived from cream */
-    --muted: 72 50% 96%;              /* Light cream-tinted background */
+    --muted: 72 50% 90%;              /* Darker cream-tinted background for better contrast */
     --muted-foreground: 72 15% 35%;   /* Warm brown-grey text */
 
     /* Supporting Colors - More restrained */
