@@ -7,10 +7,10 @@
 @layer base {
   :root {
     /* High-Contrast Color Palette */
-    --background: 0 0% 100%;              /* Pure white background */
+    --background: 0 0% 97%;               /* Light grey background for separation */
     --foreground: 0 0% 8%;                /* Very dark text for high contrast */
 
-    --card: 0 0% 100%;                    /* Pure white cards */
+    --card: 0 0% 100%;                    /* Pure white cards for contrast */
     --card-foreground: 0 0% 8%;           /* Very dark text on cards */
 
     --popover: 0 0% 100%;                 /* Pure white popovers */
@@ -65,9 +65,9 @@
     --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
     
     /* Strong shadows for better contrast */
-    --shadow-elegant: 0 8px 24px -4px hsl(0 0% 0% / 0.12);
-    --shadow-card: 0 2px 8px -2px hsl(0 0% 0% / 0.08);
-    --shadow-strong: 0 12px 32px -8px hsl(0 0% 0% / 0.15);
+    --shadow-elegant: 0 8px 24px -4px hsl(0 0% 0% / 0.15);
+    --shadow-card: 0 4px 12px -2px hsl(0 0% 0% / 0.12);
+    --shadow-strong: 0 12px 32px -8px hsl(0 0% 0% / 0.18);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
