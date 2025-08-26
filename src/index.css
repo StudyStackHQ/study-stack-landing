@@ -7,13 +7,13 @@
 @layer base {
   :root {
     /* High-Contrast Color Palette */
-    --background: 0 0% 94%;               /* Light grey background */
+    --background: 72 30% 94%;            /* Warm cream background base */
     --foreground: 0 0% 8%;                /* Very dark text for high contrast */
 
-    --card: 0 0% 100%;                    /* Pure white cards for strong contrast */
+    --card: 72 35% 98%;                  /* Warm cream cards for harmony */
     --card-foreground: 0 0% 8%;           /* Very dark text on cards */
 
-    --popover: 0 0% 100%;                 /* Pure white popovers */
+    --popover: 72 35% 98%;                /* Warm cream popovers */
     --popover-foreground: 0 0% 8%;        /* Very dark text on popovers */
 
     /* Primary - StudyStack Green Palette */
@@ -21,11 +21,11 @@
     --primary-foreground: 0 0% 100%;  /* White text on primary */
     --primary-button: 158 99% 15%;    /* #014D36 - Button green */
     --primary-accent: 150 42% 25%;    /* #2D6A4F - Darker accent green */
-    --section-bg: 0 0% 96%;              /* Darker grey for better section separation */
+    --section-bg: 72 25% 92%;             /* Warm cream section background */
     
-    /* Hero background - high contrast white */
-    --hero-bg: 0 0% 100%;                 /* Pure white background */
-    --hero-bg-accent: 0 0% 98%;           /* Slight grey accent */
+    /* Hero background - warm cream harmony */
+    --hero-bg: 72 40% 98%;                /* Warm cream background */
+    --hero-bg-accent: 72 35% 96%;         /* Slightly darker cream accent */
     
     /* Supporting colors - harmonized */
     --icon-bg: 72 23% 87%;            /* Warm light background for icons */
