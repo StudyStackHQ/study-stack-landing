@@ -41,9 +41,10 @@ const HeroSection = () => {
               <Button 
                 variant="ghost" 
                 size="default"
-                className="text-primary/70 hover:text-primary hover:bg-primary/10 px-6 py-3 text-base font-medium transition-smooth underline-offset-4 hover:underline"
+                disabled
+                className="text-primary/70 hover:text-primary hover:bg-primary/10 px-6 py-3 text-base font-medium transition-smooth underline-offset-4 hover:underline opacity-50 cursor-not-allowed"
               >
-                View Pitch Deck
+                View Pitch Deck (Coming Soon)
               </Button>
             </DialogTrigger>
             <DialogContent className="max-w-7xl max-h-[95vh] sm:max-h-[90vh] p-4 sm:p-6 my-4 sm:my-8">
