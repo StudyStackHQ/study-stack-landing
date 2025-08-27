@@ -24,7 +24,7 @@ const Navigation = () => {
         : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <div className="flex flex-col items-start">
             <img 
@@ -32,7 +32,7 @@ const Navigation = () => {
               alt="StudyStack Logo" 
               className="h-12 w-auto"
             />
-            <span className="text-xs font-medium text-muted-foreground self-end -mt-1">
+            <span className="text-[10px] font-medium text-muted-foreground self-end -mt-1">
               Learn & Earn
             </span>
           </div>
