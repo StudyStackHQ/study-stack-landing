@@ -22,6 +22,7 @@
     --primary-button: 158 99% 15%;    /* #014D36 - Button green */
     --primary-accent: 150 42% 25%;    /* #2D6A4F - Darker accent green */
     --section-bg: 72 25% 92%;             /* Warm cream section background */
+    --section-alt: 72 20% 89%;            /* Slightly darker warm cream for alternating sections */
     
     /* Hero background - warm cream harmony */
     --hero-bg: 72 40% 98%;                /* Warm cream background */

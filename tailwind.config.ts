@@ -71,7 +71,8 @@ export default {
 				// Supporting colors for elementary-friendly design
 				'info-bg': 'hsl(var(--info-bg))',
 				'success-bg': 'hsl(var(--success-bg))',
-				'warning-bg': 'hsl(var(--warning-bg))'
+				'warning-bg': 'hsl(var(--warning-bg))',
+				'section-alt': 'hsl(var(--section-alt))'
 			},
 			fontFamily: {
 				sans: ['Inter', 'system-ui', 'sans-serif'],
