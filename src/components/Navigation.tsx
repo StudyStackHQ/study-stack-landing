@@ -26,8 +26,11 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center gap-3">
             <h1 className="font-yearbook text-2xl font-bold text-primary">StudyStack</h1>
+            <span className="text-sm font-semibold text-accent bg-accent/10 px-2 py-1 rounded-full border border-accent/20">
+              Learn & Earn
+            </span>
           </div>
 
           {/* Navigation Links */}
