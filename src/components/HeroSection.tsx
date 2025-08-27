@@ -39,9 +39,9 @@ const HeroSection = () => {
           <Dialog>
             <DialogTrigger asChild>
               <Button 
-                variant="outline" 
-                size="lg"
-                className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-10 py-6 text-xl font-semibold hover:scale-105 transition-smooth"
+                variant="ghost" 
+                size="default"
+                className="text-primary/70 hover:text-primary hover:bg-primary/10 px-6 py-3 text-base font-medium transition-smooth underline-offset-4 hover:underline"
               >
                 View Pitch Deck
               </Button>
