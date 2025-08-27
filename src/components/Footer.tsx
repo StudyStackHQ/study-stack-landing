@@ -13,7 +13,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="mb-4">
-              <h2 className="font-yearbook text-4xl font-bold text-primary">StudyStack</h2>
+              <img 
+                src="/lovable-uploads/534f5b56-b49e-4b6e-a4fa-404a77d79ff0.png" 
+                alt="StudyStack Logo" 
+                className="h-12 w-auto"
+              />
             </div>
             <p className="text-muted-foreground mb-6 max-w-md leading-relaxed">
               The social learning platform where students turn knowledge into income. 
