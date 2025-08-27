@@ -30,9 +30,9 @@ const Navigation = () => {
             <img 
               src="/lovable-uploads/534f5b56-b49e-4b6e-a4fa-404a77d79ff0.png" 
               alt="StudyStack Logo" 
-              className="h-8 w-auto"
+              className="h-12 w-auto"
             />
-            <span className="text-sm font-medium text-muted-foreground self-end -mt-1">
+            <span className="text-xs font-medium text-muted-foreground self-end -mt-1">
               Learn & Earn
             </span>
           </div>
