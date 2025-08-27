@@ -32,7 +32,7 @@ const Navigation = () => {
               alt="StudyStack Logo" 
               className="h-12 w-auto"
             />
-            <span className="text-[10px] font-medium text-muted-foreground self-end -mt-1">
+            <span className="text-[10px] font-medium text-muted-foreground self-end -mt-3">
               Learn & Earn
             </span>
           </div>
