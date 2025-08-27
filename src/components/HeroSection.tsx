@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Music, Rocket, Zap, GraduationCap } from "lucide-react";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import AudioPlayer from "@/components/AudioPlayer";
 import heroImage from "@/assets/hero-image.jpg";
 
 
@@ -34,13 +36,24 @@ const HeroSection = () => {
           >
             Join the Waitlist - Get Early Access
           </Button>
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-10 py-6 text-xl font-semibold hover:scale-105 transition-smooth"
-          >
-            Listen to Pitch
-          </Button>
+          <Dialog>
+            <DialogTrigger asChild>
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-10 py-6 text-xl font-semibold hover:scale-105 transition-smooth"
+              >
+                Listen to Pitch
+              </Button>
+            </DialogTrigger>
+            <DialogContent className="max-w-2xl">
+              <AudioPlayer 
+                src="https://drive.google.com/uc?export=download&id=1BumyxrYZSKwp-Rk7baaZgnuweJpMegqV"
+                title="StudyStack Pitch Deck"
+                className="w-full"
+              />
+            </DialogContent>
+          </Dialog>
         </div>
         
         {/* Clean trust indicators */}
