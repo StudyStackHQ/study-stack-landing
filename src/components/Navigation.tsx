@@ -27,7 +27,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex flex-col items-start">
-            <h1 className="font-yearbook text-2xl font-bold text-primary">StudyStack</h1>
+            <img 
+              src="/lovable-uploads/534f5b56-b49e-4b6e-a4fa-404a77d79ff0.png" 
+              alt="StudyStack Logo" 
+              className="h-8 w-auto"
+            />
             <span className="text-sm font-medium text-muted-foreground self-end -mt-1">
               Learn & Earn
             </span>
