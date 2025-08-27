@@ -24,7 +24,7 @@ const Navigation = () => {
         : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex flex-col items-start">
             <img 
