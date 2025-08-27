@@ -76,7 +76,7 @@ const Navigation = () => {
             </Button>
             <Button 
               size="sm"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground hover:scale-105 transition-bounce"
+              className="hidden sm:flex bg-primary hover:bg-primary/90 text-primary-foreground hover:scale-105 transition-bounce"
             >
               Join Waitlist
             </Button>
