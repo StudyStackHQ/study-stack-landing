@@ -26,9 +26,9 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-3">
+          <div className="flex flex-col items-start">
             <h1 className="font-yearbook text-2xl font-bold text-primary">StudyStack</h1>
-            <span className="text-sm font-medium text-muted-foreground">
+            <span className="text-sm font-medium text-muted-foreground self-end -mt-1">
               Learn & Earn
             </span>
           </div>
