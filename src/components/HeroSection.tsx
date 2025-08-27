@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Music, Rocket, Zap, GraduationCap } from "lucide-react";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Music, Rocket, Zap, GraduationCap, X } from "lucide-react";
+import { Dialog, DialogContent, DialogTrigger, DialogClose } from "@/components/ui/dialog";
 import AudioPlayer from "@/components/AudioPlayer";
 import heroImage from "@/assets/hero-image.jpg";
 
@@ -46,8 +46,14 @@ const HeroSection = () => {
                 View Pitch Deck
               </Button>
             </DialogTrigger>
-            <DialogContent className="max-w-7xl max-h-[90vh] p-6">
-              <div className="space-y-6">
+            <DialogContent className="max-w-7xl max-h-[95vh] sm:max-h-[90vh] p-4 sm:p-6 my-4 sm:my-8">
+              {/* Mobile Close Button */}
+              <DialogClose className="absolute right-4 top-4 z-50 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground md:hidden">
+                <X className="h-6 w-6" />
+                <span className="sr-only">Close</span>
+              </DialogClose>
+              
+              <div className="space-y-4 sm:space-y-6 pt-8 md:pt-0">
                 {/* Audio Player */}
                 <AudioPlayer 
                   src="/pitch-deck-audio.mp3"
@@ -56,7 +62,7 @@ const HeroSection = () => {
                 />
                 
                 {/* Pitch Deck Slides */}
-                <div className="w-full h-[600px] border rounded-lg overflow-hidden">
+                <div className="w-full h-[400px] sm:h-[500px] lg:h-[600px] border rounded-lg overflow-hidden">
                   <iframe
                     src="https://studystack-pitch-z23rn1o.gamma.site/"
                     className="w-full h-full"
