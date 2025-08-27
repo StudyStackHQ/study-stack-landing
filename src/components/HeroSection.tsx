@@ -47,9 +47,9 @@ const HeroSection = () => {
               </Button>
             </DialogTrigger>
             <DialogContent className="max-w-7xl max-h-[95vh] sm:max-h-[90vh] p-4 sm:p-6 my-4 sm:my-8">
-              {/* Mobile Close Button */}
-              <DialogClose className="absolute right-4 top-4 z-50 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground md:hidden">
-                <X className="h-6 w-6" />
+              {/* Close Button */}
+              <DialogClose className="absolute right-4 top-4 z-50 flex h-10 w-10 items-center justify-center rounded-full bg-background/80 backdrop-blur-sm border border-border shadow-lg transition-all hover:bg-background hover:scale-110 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2">
+                <X className="h-5 w-5 text-foreground" />
                 <span className="sr-only">Close</span>
               </DialogClose>
               
