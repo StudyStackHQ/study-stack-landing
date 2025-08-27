@@ -39,7 +39,7 @@ const HeroSection = () => {
             size="lg"
             className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-10 py-6 text-xl font-semibold hover:scale-105 transition-smooth"
           >
-            Book a Demo
+            Listen to Pitch
           </Button>
         </div>
         
