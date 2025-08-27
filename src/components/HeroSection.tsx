@@ -43,15 +43,28 @@ const HeroSection = () => {
                 size="lg"
                 className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-10 py-6 text-xl font-semibold hover:scale-105 transition-smooth"
               >
-                Listen to Pitch
+                View Pitch Deck
               </Button>
             </DialogTrigger>
-            <DialogContent className="max-w-2xl">
-              <AudioPlayer 
-                src="/pitch-deck-audio.mp3"
-                title="StudyStack Pitch Deck"
-                className="w-full"
-              />
+            <DialogContent className="max-w-7xl max-h-[90vh] p-6">
+              <div className="space-y-6">
+                {/* Audio Player */}
+                <AudioPlayer 
+                  src="/pitch-deck-audio.mp3"
+                  title="StudyStack Pitch Deck"
+                  className="w-full"
+                />
+                
+                {/* Pitch Deck Slides */}
+                <div className="w-full h-[600px] border rounded-lg overflow-hidden">
+                  <iframe
+                    src="https://studystack-pitch-z23rn1o.gamma.site/"
+                    className="w-full h-full"
+                    title="StudyStack Pitch Deck Slides"
+                    allow="fullscreen"
+                  />
+                </div>
+              </div>
             </DialogContent>
           </Dialog>
         </div>
