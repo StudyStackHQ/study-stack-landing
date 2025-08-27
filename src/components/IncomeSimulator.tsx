@@ -13,10 +13,10 @@ const IncomeSimulator = () => {
   const yearlyIncome = monthlyIncome * 12;
 
   const presets = [
-    { price: 1, subscribers: 100, label: "Getting Started" },
-    { price: 5, subscribers: 200, label: "Growing Community" },
-    { price: 10, subscribers: 500, label: "Established Creator" },
-    { price: 15, subscribers: 1000, label: "Top Creator" }
+    { price: 1, subscribers: 50, label: "Starting Out" },
+    { price: 15, subscribers: 200, label: "Growing Community" },
+    { price: 35, subscribers: 500, label: "Established Creator" },
+    { price: 75, subscribers: 1000, label: "Top Creator" }
   ];
 
   return (
@@ -54,14 +54,14 @@ const IncomeSimulator = () => {
                         onChange={(e) => setPrice([parseInt(e.target.value) || 1])}
                         className="w-20 h-8 text-center"
                         min="1"
-                        max="50"
+                        max="100"
                       />
                     </div>
                   </div>
                   <Slider
                     value={price}
                     onValueChange={setPrice}
-                    max={50}
+                    max={100}
                     min={1}
                     step={1}
                     className="w-full"

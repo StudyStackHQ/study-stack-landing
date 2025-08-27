@@ -29,7 +29,7 @@ const FAQ = () => {
       questions: [
         {
           question: "How much will it cost to access materials?",
-          answer: "Individual documents will range from $2-15. Creator subscriptions will start at $9.99/month for unlimited access."
+          answer: "StudyStack repository and smart search subscription starts at $5/month. Content creators can charge $1-100/month for access to their study notes, live study sessions, and mentoring."
         },
         {
           question: "How will the AI work?",
