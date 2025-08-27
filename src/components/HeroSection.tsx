@@ -48,7 +48,7 @@ const HeroSection = () => {
             </DialogTrigger>
             <DialogContent className="max-w-2xl">
               <AudioPlayer 
-                src="https://drive.google.com/uc?export=download&id=1BumyxrYZSKwp-Rk7baaZgnuweJpMegqV"
+                src="/pitch-deck-audio.mp3"
                 title="StudyStack Pitch Deck"
                 className="w-full"
               />
